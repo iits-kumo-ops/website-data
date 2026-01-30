@@ -1,5 +1,5 @@
 {
-  "name": "@kumo-ops/website-data-monorepo",
+  "name": "@iits-kumo-ops/website-data-monorepo",
   "private": true,
   "workspaces": [
     "packages/*"
@@ -10,6 +10,7 @@
     "lint": "bun run --filter '*' lint"
   },
   "devDependencies": {
+    "@types/bun": "^1.1.0",
     "typescript": "^5.3.0"
   }
 }

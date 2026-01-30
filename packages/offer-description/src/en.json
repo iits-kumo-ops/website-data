@@ -1,0 +1,389 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "lastUpdated": "2026-01-15",
+    "description": "Initial locale structure"
+  },
+  "nav": {
+    "services": "Services",
+    "benefits": "Benefits",
+    "pricing": "Pricing",
+    "addons": "Add-ons",
+    "testimonials": "Testimonials",
+    "letsTalk": "Let's Talk",
+    "skipToContent": "Skip to main content"
+  },
+  "hero": {
+    "badge": "CloudSecOps as a Service",
+    "title1": "Developer Platform and",
+    "title2": "CloudSecOps",
+    "title3": "unified",
+    "title4": "in one solution",
+    "description": "If you're building a software product, writing the code is only half the job. You also need to run and maintain it for every customer—fast, secure, and reliable 24/7. That takes time, specialized skills, and real budget.",
+    "descriptionHighlight": "Get back to focusing 100% on your product.\nWe'll handle CloudSecOps, for less than the cost of a single hire.",
+    "getStarted": "Get Started",
+    "viewPricing": "View Pricing",
+    "sla": "99.95% SLA",
+    "downtime": "0 Min Downtime",
+    "addons": "31 Add-ons",
+    "costSavings": "50% Cost Savings",
+    "responseTime": "<5 Min Response",
+    "clickToPlay": "Click to play with sound"
+  },
+  "stats": {
+    "title": "Results of Our CloudSecOps Service",
+    "subtitle": "Real metrics from our customers who switched to KumoOps",
+    "infrastructureCosts": "Infrastructure Costs",
+    "reduced": "REDUCED",
+    "releaseDowntime": "Release Downtime",
+    "fromTo": "FROM 180 MIN TO 0",
+    "incidentResponse": "Incident Response Time",
+    "median": "MEDIAN",
+    "sla": "Service Level Agreement",
+    "slaImproved": "FROM 98% TO 99.95%"
+  },
+  "services": {
+    "badge": "Our Service",
+    "title": "What is KumoOps – CloudSecOps as a Service?",
+    "description": "We offer a tailored solution that combines our expertise in cloud infrastructure, DevOps, and software development. Our team works closely with you to understand your needs and develop a customized solution.",
+    "cloudSecOpsTeam": "We Are Your CloudSecOps Team",
+    "cloudSecOpsTeamDesc": "You decide which parts we should take care of and for how long.",
+    "flexibility": "Full Flexibility",
+    "flexibilityDesc": "All major cloud providers supported. Source code always belongs to you.",
+    "reliability": "Outstanding Reliability",
+    "reliabilityDesc": "SLAs, privacy measures, security requirements – we handle it all.",
+    "learnMore": "Learn More",
+    "howItWorks": "How Does It Work?",
+    "step01": "Initial Assessment",
+    "step01Desc": "We understand your current cloud infrastructure and goals.",
+    "step02": "Infrastructure Setup",
+    "step02Desc": "We set up and manage your cloud infrastructure for optimal performance.",
+    "step03": "Pipeline Creation",
+    "step03Desc": "We create and maintain pipelines for fast, efficient deployments.",
+    "step04": "Ongoing Optimization",
+    "step04Desc": "Continuous monitoring and optimization of your cloud resources."
+  },
+  "benefits": {
+    "badge": "Why Choose Us",
+    "title": "Benefits of KumoOps",
+    "subtitle": "Focus on your core competencies while we handle everything cloud",
+    "saveCosts": "Save Costs",
+    "saveCostsDesc": "Less than hiring one employee. Our service costs less than a single CloudSecOps professional yet delivers far greater value.",
+    "instantPower": "Instant CloudSecOps Power",
+    "instantPowerDesc": "Get a proven team that has worked together for years. No need to build your own team from scratch.",
+    "security": "Enhanced Security",
+    "securityDesc": "We implement robust security measures and ensure compliance with regulatory requirements like C5 certification.",
+    "flexibility": "Full Flexibility",
+    "flexibilityDesc": "Choose any cloud provider (AWS, Azure, Google, OTC, STACKIT). The source code always belongs to you.",
+    "bestPractices": "Access to Best Practices",
+    "bestPracticesDesc": "Our team brings innovation and best practices, ensuring you leverage the latest technologies and trends.",
+    "monitoring": "24/7 Monitoring & Support",
+    "monitoringDesc": "Round-the-clock monitoring and proactive issue resolution ensures optimal performance and immediate response."
+  },
+  "pricing": {
+    "badge": "Pricing",
+    "title": "Foundation Plan",
+    "subtitle": "Essential support for your development team's cloud operation needs",
+    "startingAt": "Starting at",
+    "perMonth": "/month",
+    "commitment": "6-month minimum commitment",
+    "included": "What's included:",
+    "feature1": "Up to 8 developers or applications",
+    "feature2": "Foundation Setup & Maintenance",
+    "feature3": "10 hours monthly support budget",
+    "feature4": "Infrastructure as Code & GitOps",
+    "feature5": "SLA 8×5 (Mon-Fri, 09:00-17:00)",
+    "feature6": "Two stages (dev + prod) included",
+    "feature7": "Slack/Teams integration",
+    "feature8": "Dedicated email & phone support",
+    "note": "Note:",
+    "noteText": "These prices are our guideline based on the effort we think is necessary. Each customer will receive individual pricing. Configure your ideal cloud platform by selecting from",
+    "addonsAvailable": "31 available add-ons",
+    "configurator": "Start Configurator",
+    "getQuote": "Get Custom Quote",
+    "exploreAddons": "Explore Add-ons"
+  },
+  "addons": {
+    "badge": "Customization",
+    "title": "31 Available Add-ons",
+    "subtitle": "Enhance your cloud environment with our specialized packages for security, AI, and operations",
+    "recommended": "Recommended",
+    "support": "Support & Operations",
+    "security": "Security",
+    "ai": "Artificial Intelligence",
+    "cloudSpecific": "Cloud Specific",
+    "customSolutions": "Custom solutions or additional requirements?",
+    "customTitle": "Need Something Custom?",
+    "customDescription": "We can only list here the add-ons that are commonly necessary. If you have special requirements, it's not a problem. Just contact us and we'll find a solution tailored to your needs.",
+    "contactUs": "Contact Us",
+    "moreInfo": "More info"
+  },
+  "partners": {
+    "title": "Our Cloud Partners",
+    "subtitle": "We work with the best cloud solutions available on the market",
+    "hyperscaler": "Hyperscaler",
+    "euSovereign": "EU Sovereign"
+  },
+  "testimonials": {
+    "badge": "Testimonials",
+    "title": "Trusted by Industry Leaders",
+    "subtitle": "See what our customers say about working with KumoOps",
+    "quote1": "After iits took over our project in December 2022, we saw outstanding improvements in performance and efficiency. The seamless transition and ongoing optimizations reduced our costs by 50% and increased availability to over 99.98%. The CloudSecOps team's response time is now regularly under 15 minutes.",
+    "quote2": "After the acquisition of a medium-sized German company, we found that the existing IT provider couldn't deliver the project with high quality. Within six months, iits-consulting not only completed the project successfully but also helped us build a highly secure BSI C5-compliant infrastructure.",
+    "quote3": "With the iits Telekom Cloud Team, you could immediately tell it was a well-coordinated team. Their agile and professional approach, combined with the integration of applications into a microservices structure, was impressive. They delivered a fully automated, low-maintenance infrastructure in record time."
+  },
+  "contact": {
+    "badge": "Get Started",
+    "title": "Talk with Our Expert",
+    "description": "Start with a non-binding project inquiry and let our CloudSecOps expert team provide you with comprehensive advice on your matter.",
+    "email": "Email",
+    "schedule": "Schedule",
+    "bookMeeting": "Book a Meeting",
+    "office": "Office",
+    "readyTitle": "Ready to Get Started?",
+    "readyDescription": "Contact us today and together we will realize your project. Let us impress you and exceed your expectations.",
+    "startProject": "Start Your Project",
+    "sendEmail": "Send an Email",
+    "colleagues": "Colleagues",
+    "customers": "Customers"
+  },
+  "footer": {
+    "tagline": "Innovation as a Team.",
+    "officeDortmund": "Office Dortmund",
+    "quickLinks": "Quick Links",
+    "ourServices": "Our Services",
+    "company": "Company",
+    "aboutUs": "About Us",
+    "career": "Career",
+    "imprint": "Imprint",
+    "dataPrivacy": "Data Privacy",
+    "followUs": "Follow Us",
+    "allRightsReserved": "All rights reserved.",
+    "privacy": "Privacy",
+    "terms": "Terms"
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Find answers to common questions about KumoOps",
+    "q1": "A tool or technology I need isn't listed in the add-ons—do you support it?",
+    "a1": "In most cases, yes. We support a wide range of tools and technologies. Our default setup is container-based (e.g., Docker/Kubernetes), so we generally don't support workloads that require full Windows Server environments.",
+    "q2": "What happens to the source code and ownership if I cancel my KumoOps subscription?",
+    "a2": "You keep ownership. We build on open-source tooling and infrastructure-as-code, and during offboarding we provide you with a copy of the relevant code and configuration. After offboarding, your subscription ends—so ongoing support, updates, and improvements are no longer included.",
+    "q3": "How can KumoOps be cheaper than a single hire?",
+    "a3": "Because you're not paying for one generalist—you're getting a team. Our engineers specialize in dedicated areas and we roll out improvements across all customers. When we build a feature or harden a setup, every customer benefits, which drives the cost per customer down significantly.",
+    "q4": "How is KumoOps different from managed services?",
+    "a4": "KumoOps is a standardized product, not a highly customized cloud setup. This means lower costs, a broader feature set, and faster onboarding compared to traditional managed services—without sacrificing flexibility.",
+    "q5": "How is KumoOps different from managed Kubernetes?",
+    "a5": "KumoOps offers much more than just Kubernetes. We take care of your entire cloud infrastructure, CI/CD pipelines, and all CloudSecOps aspects—so you get a complete solution, not just container orchestration."
+  },
+  "furtherInfo": {
+    "title": "Further Information",
+    "subtitle": "Download our materials to learn more about KumoOps",
+    "onepager": {
+      "title": "Onepager",
+      "description": "Quick overview of our services on a single page"
+    },
+    "pitchdeck": {
+      "title": "Pitchdeck",
+      "description": "Full presentation with details and visuals"
+    },
+    "serviceDescription": {
+      "title": "Service Description",
+      "description": "Complete technical specifications & SLA"
+    },
+    "download": "Download",
+    "view": "View PDF"
+  },
+  "foundation_plan_full_description": {
+    "title": "Foundation Plan",
+    "description": "\"These prices are our guideline based on the effort we think is necessary to provide the service. Each customer will receive an individual pricing.\\nThe KumoOps Foundation plan provides essential support for your development team’s cloud operation’s needs. This package is designed to offer consistent and predictable support within the scope of the KumoOps tech stack. More Info can be found in the technical specification part. This plan ensures your team has the foundational support required to manage cloud operations efficiently.\\n\\nKey Features of the Foundation Plan:\\n• Package Size: Covers up to 8 developers or 8 applications (for non-microservices architectures). If the number of developers or applications exceeds this limit, the client is obligated to order an upgraded package.\\n• Foundation Setup and Maintenance: Our Foundation Setup and Maintenance service establishes your cloud operations stack through an internal developer platform that implements infrastructure as code and GitOps principles. We continuously manage your environment by provisioning two stages and validating configuration assets to ensure consistent, secure deployments and ongoing support\"",
+    "technical_description": {
+      "introduction": {
+        "overview": "KumoOps – CloudOps as a Service Foundation plan provides essential support for your development team’s cloud operation's needs. The package leverages a modern internal developer platform, using infrastructure as code to consistently set up and manage container-based environments for every stage of your project.",
+        "terminology": [
+          {
+            "term": "Infrastructure",
+            "definition": "When the document mentions an infrastructure component, it refers to cloud infrastructure elements typically built using Terraform modules. We develop, test, and reuse these modules for multiple clients. For example, a database module implements infrastructure-as-code to create databases while managing users and schemas."
+          },
+          {
+            "term": "Infrastructure Services",
+            "definition": "These essential support services enable business applications to run on the platform. They include components such as logging, monitoring, and alerting."
+          },
+          {
+            "term": "App/Business Services",
+            "definition": "These services, developed either by the client or our teams, fulfill specific business functions. They often depend on both the underlying infrastructure and the supporting infrastructure services to operate."
+          }
+        ]
+      },
+      "architecture": {
+        "summary": "The Foundation plan architecture is shaped based on many years of cloud experience with customers. It has proven already several times to be a robust and efficient architecture.",
+        "key_technologies": [
+          {
+            "name": "Infrastructure as Code (IaC)",
+            "description": "Managing and provisioning infrastructure through code rather than manual processes. Uses proven tools like Terraform to build infrastructure components."
+          },
+          {
+            "name": "GitOps",
+            "description": "A Version Control System (VCS) with dedicated DevOps repositories serves as the source of truth for applications deployed within the Kubernetes cluster, while the Terraform state file acts as the authoritative reference for the underlying infrastructure. ArgoCD is used to deploy both application and infrastructure charts."
+          }
+        ],
+        "repositories_and_tooling": {
+          "terraform": {
+            "purpose": "Responsible for provisioning a variety of infrastructure resources necessary for hosting services in the cloud.",
+            "operations": "Initial provisioning and changes are conducted by updating the terraform code and applying them with terraform. During this part, one Kubernetes cluster per stage is provisioned and ArgoCD is set up."
+          },
+          "infrastructure_charts_repo": {
+            "description": "Repository describing which Helm charts should be deployed and how. Follows the ArgoCD App-of-Apps pattern.",
+            "purpose": "Defines the desired state of Kubernetes resources necessary for provisioning a microservice architecture (e.g., logging, monitoring, routing). Contains supporting services for later business applications hosted on the Kubernetes cluster.",
+            "deployment_scope": "Deployed into every stage.",
+            "documentation_note": "Further information about usage can be found in the KumoOps technical handbook which will be available for each client after signing the contract."
+          },
+          "app_charts_repo": {
+            "description": "Repository describing how to deploy business services (e.g., Kotlin or Vue.js microservices). Works like the infrastructure-charts repository but focuses on application/business services.",
+            "documentation_note": "Further information about usage can be found in the KumoOps technical handbook which will be available for each client after signing the contract."
+          }
+        }
+      },
+      "included_components": {
+        "scope": "Comprehensive setup for cloud environments across two stages.",
+        "components": [
+          {
+            "name": "Kubernetes Cluster",
+            "details": [
+              "Configuration of a single Kubernetes cluster per stage. Multi Availability Zones deployment is possible.",
+              "Nodepool configuration tailored to meet specific requirements.",
+              "Encryption enabled for all nodes.",
+              "Custom resource definitions (CRDs) based on best practices.",
+              "Storage class definition configured based on best practices, including default encryption."
+            ]
+          },
+          {
+            "name": "Infrastructure as Code",
+            "details": [
+              "A tool like Terraform, OpenTofu, or Crossplane is used.",
+              "If Terraform/OpenTofu is used, the plan includes creation of a remote state bucket with encryption."
+            ]
+          },
+          {
+            "name": "Permissions Management",
+            "details": [
+              "Role and permissions setup following best practices specific to the chosen cloud provider."
+            ]
+          },
+          {
+            "name": "DNS Management",
+            "details": [
+              "Fully managed public DNS solution including configuration, routine maintenance, and proactive monitoring of DNS zones.",
+              "Designed to ensure fast resolution, high availability, and security against DNS-based attacks.",
+              "Leverages reliable cloud infrastructure and best practices to maintain consistent web presence."
+            ]
+          },
+          {
+            "name": "Private DNS",
+            "details": [
+              "Configuration of a private DNS for internal communication."
+            ]
+          },
+          {
+            "name": "Database Service Setup",
+            "details": [
+              "Installation and configuration of one managed database server (free of charge); multiple databases can be created on this server.",
+              "Database initialization as code (Infrastructure as Code for setup).",
+              "User management as code (automated user provisioning).",
+              "Schema management as code (automated schema provisioning).",
+              "Support for Primary/Secondary mode, if required."
+            ]
+          },
+          {
+            "name": "Load Balancer Configuration",
+            "details": [
+              "Setup of a load balancer for traffic distribution with automatic connection to the Kubernetes cluster."
+            ]
+          },
+          {
+            "name": "Certificate Management",
+            "details": [
+              "Implementation of cert-manager (e.g., Let's Encrypt) for SSL/TLS certificates.",
+              "One business domain certificate per stage.",
+              "One admin domain certificate per stage.",
+              "Wildcard certificate management for subdomains."
+            ]
+          },
+          {
+            "name": "Jump Server/Bastion Host",
+            "details": [
+              "Deployment and ongoing support of a jump server to provide controlled and secure access to cloud infrastructure.",
+              "Serves as a gateway for administrative tasks, reducing the risk of unauthorized access."
+            ]
+          },
+          {
+            "name": "Monitoring, Alerting, and Logging",
+            "details": [
+              "Installation of one monitoring, alerting, and logging system (e.g., Elastic Stack or Loki Stack).",
+              "If Elastic Stack is chosen: includes configuration of ILM (Index Lifecycle Management) policies and full setup following best practices."
+            ]
+          },
+          {
+            "name": "Identity Management System",
+            "details": [
+              "Setup and ongoing support for integrating a single identity provider (e.g., Entra ID, Azure AD) into the environment.",
+              "Setup of a technical identity management system with Single Sign-On (SSO).",
+              "Token-based access control for tools such as ArgoCD, monitoring, and logging systems.",
+              "OIDC proxy setup for admin and business domains."
+            ]
+          },
+          {
+            "name": "Administrator Landing Page",
+            "details": [
+              "A dedicated landing page for administrators to manage resources and configurations."
+            ]
+          },
+          {
+            "name": "Redis Setup",
+            "details": [
+              "Installation and configuration of one Redis instance, if required."
+            ]
+          },
+          {
+            "name": "External Uptime Monitoring",
+            "details": [
+              "Integration of external uptime monitoring for business applications."
+            ]
+          },
+          {
+            "name": "Secret Management System",
+            "details": [
+              "Set up and maintain a secrets management system (e.g., HashiCorp Vault, Azure Keyvault, AWS Secrets Manager).",
+              "Securely store and manage sensitive credentials, API keys, and other secrets.",
+              "Includes a blueprint and documentation for proper secret injection into business applications."
+            ]
+          },
+          {
+            "name": "GitOps Operations",
+            "details": [
+              "Installation and configuration of GitOps workflows in tools like ArgoCD and Flux.",
+              "Role-Based Access Control (RBAC) for ArgoCD, including authentication integration with the identity provider and granular access policies; RBAC needs to be requested from the client.",
+              "ArgoCD/Flux bootstrap via Tofu.",
+              "Automatically discovers microservices in the application repository (e.g., Kotlin, Angular).",
+              "Automatically discovers infrastructure services in the infrastructure repository (e.g., Keycloak, Vault, Traefik)."
+            ]
+          },
+          {
+            "name": "Population of container pull secrets",
+            "details": [
+              "Deployment of Kyverno to auto-populate container pull secrets.",
+              "Includes automatic injection of Git and Docker image pull secrets.",
+              "Does not include the Container Security Best Practices Add-On."
+            ]
+          }
+        ],
+        "additional_notes": [
+          {
+            "context": "OpenTelekomCloud",
+            "note": "For OpenTelekomCloud, an additional third stage (infra or infrastructure) is required. This stage is used to deploy central components such as Identity and Secret Management systems."
+          }
+        ]
+      }
+    }
+  }
+}

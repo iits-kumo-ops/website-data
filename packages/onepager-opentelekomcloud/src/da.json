@@ -1,0 +1,114 @@
+{
+  "print": {
+    "button": "Udskriv / Gem som PDF"
+  },
+  "badge": {
+    "sovereignty": "Løsning til datasuverænitet"
+  },
+  "header": {
+    "brand": "KumoOps",
+    "safetyMessage": "Giv ikke dine data til amerikanske myndigheder.",
+    "partnerBadge": "OpenTelekomCloud-partner"
+  },
+  "hero": {
+    "title": {
+      "part1": "Migrér fra amerikanske hyperscalere til",
+      "highlight": "OpenTelekomCloud",
+      "part2": "på 4 uger"
+    },
+    "subtitle": "Ingen data sendes længere til USA",
+    "cta": "Fuld migration uden nedetid – garanteret datasuverænitet."
+  },
+  "need": {
+    "title": "Hvorfor migrere væk fra amerikanske hyperscalere nu?",
+    "description": "US CLOUD Act giver amerikanske myndigheder adgang til data, der opbevares af amerikanske virksomheder – selv på EU-servere. Schrems II ugyldiggjorde Privacy Shield. Din compliance er i fare. OpenTelekomCloud holder dine data i tyske datacentre, drevet udelukkende under EU-lovgivning af Deutsche Telekom / T-Systems."
+  },
+  "metric": {
+    "migration": "4 uger",
+    "migrationSublabel": "FULD MIGRATION",
+    "dataInEU": "100%",
+    "dataInEUSublabel": "DATA I EU",
+    "downtime": "0 MIN",
+    "downtimeSublabel": "NEDETID",
+    "compliant": "GDPR",
+    "compliantSublabel": "KOMPATIBEL"
+  },
+  "usCloud": {
+    "title": "Risiko ved US CLOUD Act",
+    "description": "Amerikanske cloududbydere er omfattet af US CLOUD Act. Amerikanske myndigheder kan til enhver tid få adgang til dine data – selv hvis de er lagret på EU-servere."
+  },
+  "euCloud": {
+    "title": "EU-datasuverænitet",
+    "otc": "OpenTelekomCloud",
+    "safe": "100% EU-jurisdiktion — drevet af Deutsche Telekom",
+    "description": "Vær på den sikre side: migrér i dag til en 100% europæisk, GDPR-kompatibel cloud. Drevet af en tysk virksomhed og hostet i EU."
+  },
+  "migration": {
+    "arrow": "4 uger"
+  },
+  "features": {
+    "title": "Hvorfor KumoOps"
+  },
+  "feature": {
+    "experience": {
+      "position": 1,
+      "title": "Dokumenteret erfaring",
+      "description": "Vi har gennemført 100+ succesfulde migrationer til OpenTelekomCloud – fra startups til platforme med millioner af daglige brugere."
+    },
+    "cloudSecOps": {
+      "position": 2,
+      "title": "CloudSecOps som en service",
+      "description": "Ikke kun migrationen er inkluderet – du får også et fuldt CloudSecOps-team, der vedligeholder og drifter din cloud."
+    },
+    "compliance": {
+      "position": 3,
+      "title": "Certificeret out of the box",
+      "description": "Med os er drift, service og infrastruktur allerede certificeret*. Vi kan hjælpe dig med at blive certificeret på ingen tid."
+    },
+    "migration": {
+      "position": 4,
+      "title": "Problemfri migration",
+      "description": "Migration uden nedetid med rollback-muligheder og omfattende test."
+    },
+    "security": {
+      "position": 5,
+      "title": "Forbedret sikkerhed",
+      "description": "Europæisk CloudSecOps-team og datacentre uden amerikansk jurisdiktion. Dine data bliver i EU."
+    },
+    "cost": {
+      "position": 6,
+      "title": "Gratis migrationsplan",
+      "description": "Lad vores team analysere din nuværende US-cloud-opsætning, så udarbejder vi en gratis migrations-roadmap til dig."
+    }
+  },
+  "cert": {
+    "title": "Certificeringer & compliance",
+    "more": "Mange flere",
+    "link": "https://www.open-telekom-cloud.com/en/products-services/core-services/certifications"
+  },
+  "compliance": {
+    "title": "Enterprise-grade compliance – revideret & dokumenteret"
+  },
+  "pricing": {
+    "startingFrom": "Fra",
+    "amount": "€8.000",
+    "perMonth": "/måned",
+    "description": "Inkluderer migration og løbende CloudSecOps",
+    "cta": "Få din gratis migrationsplan",
+    "link": "https://calendly.com/victor-getz/kumoops-intro"
+  },
+  "clients": {
+    "trustedBy": "Betroet af",
+    "more": "+mere"
+  },
+  "contact": {
+    "title": "Tal med en ekspert",
+    "name": "Victor Getz",
+    "role": "CTO",
+    "cta": "Lad os tale om din migration til OpenTelekomCloud",
+    "email": "victor.getz@iits-consulting.de",
+    "linkedin": "linkedin.com/in/victor-getz",
+    "website": "kumo-ops.com"
+  },
+  "disclaimer": "*Under udarbejdelse; forventes sandsynligvis afsluttet i 2026"
+}

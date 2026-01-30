@@ -1,13 +1,16 @@
 {
-  "name": "@kumo-ops/offer-description",
+  "name": "@iits-kumo-ops/offer-description",
   "version": "1.0.0",
   "description": "KumoOps offer description locale files",
   "type": "module",
   "files": [
-    "locales"
+    "dist"
   ],
+  "scripts": {
+    "build": "bun run scripts/build.ts"
+  },
   "exports": {
-    "./locales/*": "./locales/*"
+    "./locales/*": "./dist/*"
   },
   "keywords": [
     "kumoops",
@@ -22,9 +25,12 @@
     "registry": "https://npm.pkg.github.com",
     "access": "restricted"
   },
+  "devDependencies": {
+    "@types/bun": "^1.1.0"
+  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/kumo-ops/website-data.git",
+    "url": "https://github.com/iits-kumo-ops/website-data.git",
     "directory": "packages/offer-description"
   }
 }

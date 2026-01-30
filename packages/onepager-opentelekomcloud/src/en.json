@@ -1,0 +1,114 @@
+{
+  "print": {
+    "button": "Print / Save as PDF"
+  },
+  "badge": {
+    "sovereignty": "Data Sovereignty Solution"
+  },
+  "header": {
+    "brand": "KumoOps",
+    "safetyMessage": "Don't hand your data to US authorities.",
+    "partnerBadge": "OpenTelekomCloud Partner"
+  },
+  "hero": {
+    "title": {
+      "part1": "Migrate from US Hyperscalers to",
+      "highlight": "OpenTelekomCloud",
+      "part2": "in 4 Weeks"
+    },
+    "subtitle": "No more data sent to the US",
+    "cta": "Full migration with zero downtime, guaranteed data sovereignty."
+  },
+  "need": {
+    "title": "Why migrate away from US hyperscalers now?",
+    "description": "The US CLOUD Act grants American authorities access to data stored by US companies — even on EU servers. Schrems II invalidated the Privacy Shield. Your compliance is at risk. OpenTelekomCloud keeps your data in German data centers, operated exclusively under EU law by Deutsche Telekom / T-Systems."
+  },
+  "metric": {
+    "migration": "4 Weeks",
+    "migrationSublabel": "FULL MIGRATION",
+    "dataInEU": "100%",
+    "dataInEUSublabel": "DATA IN EU",
+    "downtime": "0 MIN",
+    "downtimeSublabel": "DOWNTIME",
+    "compliant": "GDPR",
+    "compliantSublabel": "COMPLIANT"
+  },
+  "usCloud": {
+    "title": "US CLOUD Act Risk",
+    "description": "US cloud providers are subject to the US CLOUD Act. US authorities may access your data at any time even if it's stored on EU servers."
+  },
+  "euCloud": {
+    "title": "EU Data Sovereignty",
+    "otc": "OpenTelekomCloud",
+    "safe": "100% EU jurisdiction — Deutsche Telekom operated",
+    "description": "Play it safe: migrate today to a 100% European, GDPR-compliant cloud. Operated by a german company and hosted on a EU cloud."
+  },
+  "migration": {
+    "arrow": "4 Weeks"
+  },
+  "features": {
+    "title": "Why KumoOps"
+  },
+  "feature": {
+    "experience": {
+      "position": 1,
+      "title": "Proven Expertise",
+      "description": "We’ve led 100+ successful migrations to OpenTelekomCloud, from startups to platforms with millions of daily users."
+    },
+    "cloudSecOps": {
+      "position": 2,
+      "title": "CloudSecOps as a Service",
+      "description": "Not only the migration is included but you get a full CloudSecOps Team which will maintain and operate the cloud for you"
+    },
+    "compliance": {
+      "position": 3,
+      "title": "Certified out of the box",
+      "description": "With us operations, service and infrastructure is already certified*. We can get you certified in no time"
+    },
+    "migration": {
+      "position": 4,
+      "title": "Seamless Migration",
+      "description": "Zero-downtime migration with rollback capabilities and comprehensive testing."
+    },
+    "security": {
+      "position": 5,
+      "title": "Enhanced Security",
+      "description": "European CloudSecOps team and data centers with no US jurisdiction. Your data stays in the EU."
+    },
+    "cost": {
+      "position": 6,
+      "title": "Free Migration Plan",
+      "description": "Let our team analyze your current US cloud setup and we create a free migration roadmap for you."
+    }
+  },
+  "cert": {
+    "title": "Certifications & Compliance",
+    "more": "Many more",
+    "link": "https://www.open-telekom-cloud.com/en/products-services/core-services/certifications"
+  },
+  "compliance": {
+    "title": "Enterprise-Grade Compliance, Audited & Proven"
+  },
+  "pricing": {
+    "startingFrom": "Starting from",
+    "amount": "€8,000",
+    "perMonth": "/month",
+    "description": "Includes migration and ongoing CloudSecOps",
+    "cta": "Get Your Free Migration Plan",
+    "link": "https://calendly.com/victor-getz/kumoops-intro"
+  },
+  "clients": {
+    "trustedBy": "Trusted by",
+    "more": "more"
+  },
+  "contact": {
+    "title": "Talk to an Expert",
+    "name": "Victor Getz",
+    "role": "CTO",
+    "cta": "Let's discuss your migration to OpenTelekomCloud",
+    "email": "victor.getz@iits-consulting.de",
+    "linkedin": "linkedin.com/in/victor-getz",
+    "website": "kumo-ops.com"
+  },
+  "disclaimer": "*Currently in process, will be most probably finished in 2026"
+}

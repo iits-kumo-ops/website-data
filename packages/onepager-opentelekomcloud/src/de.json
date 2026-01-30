@@ -1,0 +1,114 @@
+{
+  "print": {
+    "button": "Drucken / Als PDF speichern"
+  },
+  "badge": {
+    "sovereignty": "Daten­souveränitäts-Lösung"
+  },
+  "header": {
+    "brand": "KumoOps",
+    "safetyMessage": "Geben Sie US-Behörden nicht Ihre Daten.",
+    "partnerBadge": "OpenTelekomCloud Partner"
+  },
+  "hero": {
+    "title": {
+      "part1": "Wechseln Sie von US-Hyperscalern zu",
+      "highlight": "OpenTelekomCloud",
+      "part2": "in 4 Wochen"
+    },
+    "subtitle": "Keine Daten mehr, die in die USA gehen",
+    "cta": "Vollständige Migration ohne Downtime – garantierte Datensouveränität."
+  },
+  "need": {
+    "title": "Warum jetzt von US-Hyperscalern weg migrieren?",
+    "description": "Der US CLOUD Act gewährt US-Behörden Zugriff auf Daten, die von US-Unternehmen gespeichert werden – selbst auf EU-Servern. Schrems II hat das Privacy Shield für ungültig erklärt. Ihre Compliance ist gefährdet. OpenTelekomCloud hält Ihre Daten in deutschen Rechenzentren – ausschließlich nach EU-Recht betrieben von Deutsche Telekom / T-Systems."
+  },
+  "metric": {
+    "migration": "4 Wochen",
+    "migrationSublabel": "VOLLSTÄNDIGE MIGRATION",
+    "dataInEU": "100%",
+    "dataInEUSublabel": "DATEN IN DER EU",
+    "downtime": "0 MIN",
+    "downtimeSublabel": "DOWNTIME",
+    "compliant": "DSGVO",
+    "compliantSublabel": "KONFORM"
+  },
+  "usCloud": {
+    "title": "Risiko durch den US CLOUD Act",
+    "description": "US-Cloud-Anbieter unterliegen dem US CLOUD Act. US-Behörden können jederzeit auf Ihre Daten zugreifen – selbst wenn diese auf EU-Servern gespeichert sind."
+  },
+  "euCloud": {
+    "title": "EU-Datensouveränität",
+    "otc": "OpenTelekomCloud",
+    "safe": "100% EU-Rechtsraum — betrieben von Deutsche Telekom",
+    "description": "Gehen Sie auf Nummer sicher: Wechseln Sie jetzt in eine 100% europäische, DSGVO-konforme Cloud. Betrieben von einem deutschen Unternehmen und in der EU gehostet."
+  },
+  "migration": {
+    "arrow": "4 Wochen"
+  },
+  "features": {
+    "title": "Warum KumoOps"
+  },
+  "feature": {
+    "experience": {
+      "position": 1,
+      "title": "Bewährte Expertise",
+      "description": "Wir haben 100+ erfolgreiche Migrationen zur OpenTelekomCloud durchgeführt – von Start-ups bis zu Plattformen mit Millionen täglichen Nutzern."
+    },
+    "cloudSecOps": {
+      "position": 2,
+      "title": "CloudSecOps as a Service",
+      "description": "Nicht nur die Migration ist enthalten: Sie erhalten ein komplettes CloudSecOps-Team, das Ihre Cloud für Sie betreibt und weiterentwickelt."
+    },
+    "compliance": {
+      "position": 3,
+      "title": "Zertifiziert out of the box",
+      "description": "Mit uns sind Betrieb, Service und Infrastruktur bereits zertifiziert*. Wir bringen Sie in kürzester Zeit zur Zertifizierung."
+    },
+    "migration": {
+      "position": 4,
+      "title": "Nahtlose Migration",
+      "description": "Migration ohne Downtime – mit Rollback-Möglichkeiten und umfassenden Tests."
+    },
+    "security": {
+      "position": 5,
+      "title": "Erhöhte Sicherheit",
+      "description": "Europäisches CloudSecOps-Team und Rechenzentren ohne US-Rechtszugriff. Ihre Daten bleiben in der EU."
+    },
+    "cost": {
+      "position": 6,
+      "title": "Kostenloser Migrationsplan",
+      "description": "Wir analysieren Ihre aktuelle US-Cloud-Umgebung und erstellen kostenlos eine Migrations-Roadmap für Sie."
+    }
+  },
+  "cert": {
+    "title": "Zertifizierungen & Compliance",
+    "more": "Viele weitere",
+    "link": "https://www.open-telekom-cloud.com/en/products-services/core-services/certifications"
+  },
+  "compliance": {
+    "title": "Enterprise-Compliance – geprüft & bewährt"
+  },
+  "pricing": {
+    "startingFrom": "Ab",
+    "amount": "8.000€",
+    "perMonth": "/Monat",
+    "description": "Enthält Migration und laufende CloudSecOps",
+    "cta": "Jetzt kostenlosen Migrationsplan sichern",
+    "link": "https://calendly.com/victor-getz/kumoops-intro"
+  },
+  "clients": {
+    "trustedBy": "Vertrauen uns",
+    "more": "mehr"
+  },
+  "contact": {
+    "title": "Mit einem Experten sprechen",
+    "name": "Victor Getz",
+    "role": "CTO",
+    "cta": "Lassen Sie uns über Ihre Migration zur OpenTelekomCloud sprechen",
+    "email": "victor.getz@iits-consulting.de",
+    "linkedin": "linkedin.com/in/victor-getz",
+    "website": "kumo-ops.com"
+  },
+  "disclaimer": "*Derzeit in Arbeit; voraussichtlich abgeschlossen im Jahr 2026"
+}

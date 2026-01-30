@@ -1,5 +1,5 @@
 {
-  "name": "@kumo-ops/addons",
+  "name": "@iits-kumo-ops/addons",
   "version": "1.0.0",
   "description": "KumoOps addons data and locale files",
   "type": "module",
@@ -41,7 +41,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/kumo-ops/website-data.git",
+    "url": "https://github.com/iits-kumo-ops/website-data.git",
     "directory": "packages/addons"
   }
 }
