@@ -1,5 +1,5 @@
 {
-  "name": "@iits-kumo-ops/addons",
+  "name": "@iits-kumo-ops/data-addons",
   "version": "1.0.0",
   "description": "KumoOps addons data and locale files",
   "type": "module",

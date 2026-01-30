@@ -1,5 +1,5 @@
 {
-  "name": "@iits-kumo-ops/onepager-opentelekomcloud",
+  "name": "@iits-kumo-ops/data-onepager-opentelekomcloud",
   "version": "1.0.0",
   "description": "KumoOps OpenTelekomCloud onepager locale files",
   "type": "module",
