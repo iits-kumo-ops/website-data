@@ -1,6 +1,6 @@
 {
   "name": "@iits-kumo-ops/data-offer-description",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "KumoOps offer description locale files",
   "type": "module",
   "files": [
