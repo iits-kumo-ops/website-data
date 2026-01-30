@@ -1,6 +1,6 @@
 {
   "name": "@iits-kumo-ops/data-addons",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "KumoOps addons data and locale files",
   "type": "module",
   "main": "dist/index.js",
