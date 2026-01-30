@@ -58,7 +58,7 @@ jobs:
           scope: "@iits-kumo-ops"
 
       - name: Set package version
-        run: npm version "$(npm pkg get version | tr -d '"')-$(git rev-parse --short HEAD)" --no-git-tag-version
+        run: npm version "$(node -p "require('./package.json').version")-$(git rev-parse --short HEAD)" --no-git-tag-version
         working-directory: packages/addons
 
       - name: Publish
@@ -97,7 +97,7 @@ jobs:
           scope: "@iits-kumo-ops"
 
       - name: Set package version
-        run: npm version "$(npm pkg get version | tr -d '"')-$(git rev-parse --short HEAD)" --no-git-tag-version
+        run: npm version "$(node -p "require('./package.json').version")-$(git rev-parse --short HEAD)" --no-git-tag-version
         working-directory: packages/offer-description
 
       - name: Publish
@@ -136,7 +136,7 @@ jobs:
           scope: "@iits-kumo-ops"
 
       - name: Set package version
-        run: npm version "$(npm pkg get version | tr -d '"')-$(git rev-parse --short HEAD)" --no-git-tag-version
+        run: npm version "$(node -p "require('./package.json').version")-$(git rev-parse --short HEAD)" --no-git-tag-version
         working-directory: packages/onepager-opentelekomcloud
 
       - name: Publish
