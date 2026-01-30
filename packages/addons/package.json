@@ -6,8 +6,7 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
-    "dist",
-    "locales"
+    "dist"
   ],
   "scripts": {
     "generate": "bun run scripts/generate-locales.ts",
@@ -19,7 +18,7 @@
       "import": "./dist/index.js",
       "types": "./dist/index.d.ts"
     },
-    "./locales/*": "./locales/*"
+    "./locales/*": "./dist/locales/*"
   },
   "keywords": [
     "kumoops",

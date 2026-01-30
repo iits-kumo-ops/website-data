@@ -9,7 +9,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  changes:
+  detect-changes:
     runs-on: ubuntu-latest
     outputs:
       addons: ${{ steps.filter.outputs.addons }}
@@ -29,8 +29,8 @@ jobs:
               - 'packages/onepager-opentelekomcloud/**'
 
   publish-addons:
-    needs: changes
-    if: ${{ needs.changes.outputs.addons == 'true' || github.event_name == 'workflow_dispatch' }}
+    needs: detect-changes
+    if: ${{ needs.detect-changes.outputs.addons == 'true' || github.event_name == 'workflow_dispatch' }}
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -65,8 +65,8 @@ jobs:
         continue-on-error: true
 
   publish-offer-description:
-    needs: changes
-    if: ${{ needs.changes.outputs.offer-description == 'true' || github.event_name == 'workflow_dispatch' }}
+    needs: detect-changes
+    if: ${{ needs.detect-changes.outputs.offer-description == 'true' || github.event_name == 'workflow_dispatch' }}
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -101,8 +101,8 @@ jobs:
         continue-on-error: true
 
   publish-onepager-opentelekomcloud:
-    needs: changes
-    if: ${{ needs.changes.outputs.onepager-opentelekomcloud == 'true' || github.event_name == 'workflow_dispatch' }}
+    needs: detect-changes
+    if: ${{ needs.detect-changes.outputs.onepager-opentelekomcloud == 'true' || github.event_name == 'workflow_dispatch' }}
     runs-on: ubuntu-latest
     permissions:
       contents: read

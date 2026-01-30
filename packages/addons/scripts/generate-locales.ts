@@ -13,7 +13,7 @@ import { execSync } from "child_process";
 
 const PACKAGE_DIR = path.join(import.meta.dir, "..");
 const DATA_DIR = path.join(PACKAGE_DIR, "data");
-const OUTPUT_DIR = path.join(PACKAGE_DIR, "locales");
+const OUTPUT_DIR = path.join(PACKAGE_DIR, "dist", "locales");
 
 interface LocalizedString {
   [locale: string]: string;
