@@ -1,0 +1,30 @@
+{
+  "name": "@kumo-ops/onepager-opentelekomcloud",
+  "version": "1.0.0",
+  "description": "KumoOps OpenTelekomCloud onepager locale files",
+  "type": "module",
+  "files": [
+    "locales"
+  ],
+  "exports": {
+    "./locales/*": "./locales/*"
+  },
+  "keywords": [
+    "kumoops",
+    "onepager",
+    "opentelekomcloud",
+    "locales",
+    "i18n"
+  ],
+  "author": "KumoOps",
+  "license": "UNLICENSED",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com",
+    "access": "restricted"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kumo-ops/website-data.git",
+    "directory": "packages/onepager-opentelekomcloud"
+  }
+}

@@ -1,0 +1,64 @@
+name: Generate Locales and Publish
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "packages/**"
+  workflow_dispatch:
+
+jobs:
+  publish-addons:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
+      - name: Install dependencies
+        run: bun install
+
+      - name: Generate locale files
+        run: bun run generate
+        working-directory: packages/addons
+
+      - name: Build TypeScript
+        run: bun run build
+        working-directory: packages/addons
+
+      - name: Setup Node.js for npm publish
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          registry-url: "https://npm.pkg.github.com"
+          scope: "@kumo-ops"
+
+      - name: Publish @kumo-ops/addons
+        run: npm publish --access restricted
+        working-directory: packages/addons
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        continue-on-error: true
+
+      - name: Publish @kumo-ops/offer-description
+        run: npm publish --access restricted
+        working-directory: packages/offer-description
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        continue-on-error: true
+
+      - name: Publish @kumo-ops/onepager-opentelekomcloud
+        run: npm publish --access restricted
+        working-directory: packages/onepager-opentelekomcloud
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        continue-on-error: true

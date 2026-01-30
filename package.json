@@ -1,0 +1,15 @@
+{
+  "name": "@kumo-ops/website-data-monorepo",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "generate": "bun run --filter '*' generate",
+    "build": "bun run --filter '*' build",
+    "lint": "bun run --filter '*' lint"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.0"
+  }
+}
