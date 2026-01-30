@@ -30,7 +30,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/iits-kumo-ops/website-data.git",
+    "url": "git+https://github.com/iits-kumo-ops/website-data.git",
     "directory": "packages/offer-description"
   }
 }
