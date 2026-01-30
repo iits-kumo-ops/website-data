@@ -1,4 +1,4 @@
-name: Generate Locales and Publish
+name: Build and Publish
 
 on:
   push:
@@ -9,15 +9,34 @@ on:
   workflow_dispatch:
 
 jobs:
+  changes:
+    runs-on: ubuntu-latest
+    outputs:
+      addons: ${{ steps.filter.outputs.addons }}
+      offer-description: ${{ steps.filter.outputs.offer-description }}
+      onepager-opentelekomcloud: ${{ steps.filter.outputs.onepager-opentelekomcloud }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dorny/paths-filter@v3
+        id: filter
+        with:
+          filters: |
+            addons:
+              - 'packages/addons/**'
+            offer-description:
+              - 'packages/offer-description/**'
+            onepager-opentelekomcloud:
+              - 'packages/onepager-opentelekomcloud/**'
+
   publish-addons:
+    needs: changes
+    if: ${{ needs.changes.outputs.addons == 'true' || github.event_name == 'workflow_dispatch' }}
     runs-on: ubuntu-latest
     permissions:
       contents: read
       packages: write
-
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
       - name: Setup Bun
         uses: oven-sh/setup-bun@v2
@@ -27,20 +46,80 @@ jobs:
       - name: Install dependencies
         run: bun install
 
-      - name: Generate locale files
-        run: bun run generate
-        working-directory: packages/addons
-
-      - name: Build TypeScript
+      - name: Generate and build
         run: bun run build
         working-directory: packages/addons
 
-      - name: Build offer-description
-        run: bun run build
+      - name: Setup Node.js for npm publish
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          registry-url: "https://npm.pkg.github.com"
+          scope: "@iits-kumo-ops"
+
+      - name: Publish
+        run: npm publish --access restricted
+        working-directory: packages/addons
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        continue-on-error: true
+
+  publish-offer-description:
+    needs: changes
+    if: ${{ needs.changes.outputs.offer-description == 'true' || github.event_name == 'workflow_dispatch' }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
+      - name: Install dependencies
+        run: bun install
+
+      - name: Build
+        run: bun run build -- --ignore-warnings
         working-directory: packages/offer-description
 
-      - name: Build onepager-opentelekomcloud
-        run: bun run build
+      - name: Setup Node.js for npm publish
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          registry-url: "https://npm.pkg.github.com"
+          scope: "@iits-kumo-ops"
+
+      - name: Publish
+        run: npm publish --access restricted
+        working-directory: packages/offer-description
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        continue-on-error: true
+
+  publish-onepager-opentelekomcloud:
+    needs: changes
+    if: ${{ needs.changes.outputs.onepager-opentelekomcloud == 'true' || github.event_name == 'workflow_dispatch' }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
+      - name: Install dependencies
+        run: bun install
+
+      - name: Build
+        run: bun run build -- --ignore-warnings
         working-directory: packages/onepager-opentelekomcloud
 
       - name: Setup Node.js for npm publish
@@ -50,21 +129,7 @@ jobs:
           registry-url: "https://npm.pkg.github.com"
           scope: "@iits-kumo-ops"
 
-      - name: Publish @iits-kumo-ops/addons
-        run: npm publish --access restricted
-        working-directory: packages/addons
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        continue-on-error: true
-
-      - name: Publish @iits-kumo-ops/offer-description
-        run: npm publish --access restricted
-        working-directory: packages/offer-description
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        continue-on-error: true
-
-      - name: Publish @iits-kumo-ops/onepager-opentelekomcloud
+      - name: Publish
         run: npm publish --access restricted
         working-directory: packages/onepager-opentelekomcloud
         env:
