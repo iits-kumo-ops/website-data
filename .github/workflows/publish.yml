@@ -57,12 +57,15 @@ jobs:
           registry-url: "https://npm.pkg.github.com"
           scope: "@iits-kumo-ops"
 
+      - name: Set package version
+        run: npm version "$(npm pkg get version | tr -d '"')-$(git rev-parse --short HEAD)" --no-git-tag-version
+        working-directory: packages/addons
+
       - name: Publish
         run: npm publish --access restricted
         working-directory: packages/addons
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        continue-on-error: true
 
   publish-offer-description:
     needs: detect-changes
@@ -93,12 +96,15 @@ jobs:
           registry-url: "https://npm.pkg.github.com"
           scope: "@iits-kumo-ops"
 
+      - name: Set package version
+        run: npm version "$(npm pkg get version | tr -d '"')-$(git rev-parse --short HEAD)" --no-git-tag-version
+        working-directory: packages/offer-description
+
       - name: Publish
         run: npm publish --access restricted
         working-directory: packages/offer-description
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        continue-on-error: true
 
   publish-onepager-opentelekomcloud:
     needs: detect-changes
@@ -129,9 +135,12 @@ jobs:
           registry-url: "https://npm.pkg.github.com"
           scope: "@iits-kumo-ops"
 
+      - name: Set package version
+        run: npm version "$(npm pkg get version | tr -d '"')-$(git rev-parse --short HEAD)" --no-git-tag-version
+        working-directory: packages/onepager-opentelekomcloud
+
       - name: Publish
         run: npm publish --access restricted
         working-directory: packages/onepager-opentelekomcloud
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        continue-on-error: true
