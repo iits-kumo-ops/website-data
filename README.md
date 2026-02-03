@@ -6,6 +6,7 @@ Monorepo for KumoOps website locale data packages.
 
 - `@iits-kumo-ops/data-addons` - Addon descriptions and translations
 - `@iits-kumo-ops/data-offer-description` - Offer description locale files
+- `@iits-kumo-ops/data-onepager` - KumoOps onepager locale files
 - `@iits-kumo-ops/data-onepager-opentelekomcloud` - OpenTelekomCloud onepager locale files
 
 ## Getting Started

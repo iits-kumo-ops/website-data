@@ -1,0 +1,439 @@
+# KumoOps onepager locale data
+#
+# Structure requirements:
+# - metrics: exactly 4 items (validated at build time)
+# - features: exactly 6 items (validated at build time)
+
+description: "KumoOps onepager locale data"
+
+supportedLocales:
+  - en
+  - de
+  - da
+  - es
+  - fr
+  - it
+  - nl
+  - sv
+  - zh
+
+strings:
+  badge.cloudSecOps:
+    en: "CloudSecOps as a Service"
+    de: "CloudSecOps as a Service"
+    da: "CloudSecOps as a Service"
+    es: "CloudSecOps as a Service"
+    fr: "CloudSecOps as a Service"
+    it: "CloudSecOps as a Service"
+    nl: "CloudSecOps as a Service"
+    sv: "CloudSecOps as a Service"
+    zh: "CloudSecOps 即服务"
+
+  hero.title.part1:
+    en: "Developer Platform and"
+    de: "Developer Platform und"
+    da: "Udviklerplatform og"
+    es: "Plataforma de Desarrollo y"
+    fr: "Plateforme Développeur et"
+    it: "Piattaforma Developer e"
+    nl: "Developer Platform en"
+    sv: "Utvecklarplattform och"
+    zh: "开发者平台与"
+
+  hero.title.highlight:
+    en: "CloudSecOps unified"
+    de: "CloudSecOps vereint"
+    da: "CloudSecOps samlet"
+    es: "CloudSecOps unificados"
+    fr: "CloudSecOps unifiés"
+    it: "CloudSecOps unificati"
+    nl: "CloudSecOps verenigd"
+    sv: "CloudSecOps förenat"
+    zh: "CloudSecOps 统一"
+
+  hero.title.part2:
+    en: "in one solution"
+    de: "in einer Lösung"
+    da: "i én løsning"
+    es: "en una sola solución"
+    fr: "en une seule solution"
+    it: "in un'unica soluzione"
+    nl: "in één oplossing"
+    sv: "i en lösning"
+    zh: "于一体的解决方案"
+
+  hero.description:
+    en: "If you're building a software product, writing the code is only half the job. You also need to run and maintain it for every customer—fast, secure, and reliable 24/7. That takes time, specialized skills, and real budget."
+    de: "Wenn du ein Softwareprodukt entwickelst, ist die Softwareentwicklung nur die halbe Arbeit. Du musst es auch für jeden Kunden betreiben und warten – schnell, sicher und zuverlässig, rund um die Uhr. Das kostet Zeit, erfordert Spezialwissen und viel Geld."
+    da: "Hvis du bygger et softwareprodukt, er det kun halvdelen af arbejdet at skrive koden. Du skal også køre og vedligeholde det for hver kunde — hurtigt, sikkert og pålideligt 24/7. Det kræver tid, specialiserede færdigheder og et reelt budget."
+    es: "Si estás desarrollando un producto de software, escribir el código es solo la mitad del trabajo. También necesitas ejecutarlo y mantenerlo para cada cliente — rápido, seguro y confiable las 24 horas. Eso requiere tiempo, habilidades especializadas y presupuesto real."
+    fr: "Si vous développez un produit logiciel, écrire le code n'est que la moitié du travail. Vous devez aussi l'exécuter et le maintenir pour chaque client — rapidement, en toute sécurité et de manière fiable 24h/24. Cela demande du temps, des compétences spécialisées et un vrai budget."
+    it: "Se stai costruendo un prodotto software, scrivere il codice è solo metà del lavoro. Devi anche eseguirlo e mantenerlo per ogni cliente — veloce, sicuro e affidabile 24/7. Questo richiede tempo, competenze specializzate e un vero budget."
+    nl: "Als je een softwareproduct bouwt, is het schrijven van de code slechts de helft van het werk. Je moet het ook draaien en onderhouden voor elke klant — snel, veilig en betrouwbaar 24/7. Dat kost tijd, gespecialiseerde vaardigheden en een echt budget."
+    sv: "Om du bygger en mjukvaruprodukt är kodskrivning bara halva jobbet. Du måste också köra och underhålla den för varje kund — snabbt, säkert och pålitligt dygnet runt. Det kräver tid, specialiserade färdigheter och riktig budget."
+    zh: "如果您正在构建软件产品，编写代码只是一半的工作。您还需要为每个客户运行和维护它——快速、安全、全天候可靠。这需要时间、专业技能和真正的预算。"
+
+  hero.cta:
+    en: "We'll handle CloudSecOps, for less than the cost of a single hire."
+    de: "Wir übernehmen CloudSecOps – für weniger als die Kosten einer einzigen Neueinstellung."
+    da: "Vi håndterer CloudSecOps for mindre end omkostningerne ved én enkelt ansættelse."
+    es: "Nosotros nos encargamos de CloudSecOps, por menos del costo de una sola contratación."
+    fr: "Nous gérons CloudSecOps, pour moins que le coût d'une seule embauche."
+    it: "Gestiamo CloudSecOps per meno del costo di una singola assunzione."
+    nl: "Wij regelen CloudSecOps voor minder dan de kosten van één enkele aanwerving."
+    sv: "Vi hanterar CloudSecOps för mindre än kostnaden för en enda anställning."
+    zh: "我们处理 CloudSecOps，费用低于单次招聘成本。"
+
+  need.title:
+    en: "Do I need CloudSecOps as a Service?"
+    de: "Brauche ich CloudSecOps as a Service?"
+    da: "Har jeg brug for CloudSecOps as a Service?"
+    es: "¿Necesito CloudSecOps as a Service?"
+    fr: "Ai-je besoin de CloudSecOps as a Service ?"
+    it: "Ho bisogno di CloudSecOps as a Service?"
+    nl: "Heb ik CloudSecOps as a Service nodig?"
+    sv: "Behöver jag CloudSecOps as a Service?"
+    zh: "我需要 CloudSecOps 即服务吗？"
+
+  need.description:
+    en: "You have software products that need reliable hosting and management? This is the solution for you. Select the services we should take care of, and we'll handle it — no need to hire extra Cloud/DevOps staff."
+    de: "Sie haben Softwareprodukte, die zuverlässiges Hosting und Management benötigen? Das ist die Lösung für Sie. Wählen Sie die Services, die wir übernehmen sollen – ohne zusätzliches Cloud/DevOps-Personal einstellen zu müssen."
+    da: "Har du softwareprodukter, der har brug for pålidelig hosting og administration? Dette er løsningen for dig. Vælg de tjenester, vi skal tage os af, og vi klarer det — uden at ansætte ekstra Cloud/DevOps-personale."
+    es: "¿Tienes productos de software que necesitan alojamiento y gestión confiables? Esta es la solución para ti. Selecciona los servicios de los que debemos encargarnos, y lo manejamos — sin necesidad de contratar personal adicional de Cloud/DevOps."
+    fr: "Vous avez des produits logiciels qui nécessitent un hébergement et une gestion fiables ? C'est la solution pour vous. Sélectionnez les services dont nous devons nous occuper, et nous nous en chargeons — pas besoin d'embaucher du personnel Cloud/DevOps supplémentaire."
+    it: "Hai prodotti software che necessitano di hosting e gestione affidabili? Questa è la soluzione per te. Seleziona i servizi di cui dobbiamo occuparci, e ce ne occupiamo noi — senza assumere personale Cloud/DevOps aggiuntivo."
+    nl: "Heb je softwareproducten die betrouwbare hosting en beheer nodig hebben? Dit is de oplossing voor jou. Selecteer de diensten waar wij voor moeten zorgen, en wij regelen het — geen extra Cloud/DevOps-personeel nodig."
+    sv: "Har du mjukvaruprodukter som behöver pålitlig hosting och hantering? Detta är lösningen för dig. Välj de tjänster vi ska ta hand om, så hanterar vi det — inget behov av att anställa extra Cloud/DevOps-personal."
+    zh: "您有需要可靠托管和管理的软件产品吗？这就是为您准备的解决方案。选择我们应该负责的服务，我们来处理——无需雇用额外的云/DevOps 人员。"
+
+  cert.badge:
+    en: "C5:2020 certified cloud service – ideal for healthcare, banking and public sector*"
+    de: "C5:2020-zertifizierter Cloud-Service – ideal für Gesundheitswesen, Banken und öffentlichen Sektor*"
+    da: "C5:2020-certificeret cloudtjeneste – ideel til sundhed, bank og offentlig sektor*"
+    es: "Servicio cloud certificado C5:2020 – ideal para salud, banca y sector público*"
+    fr: "Service cloud certifié C5:2020 – idéal pour la santé, la banque et le secteur public*"
+    it: "Servizio cloud certificato C5:2020 – ideale per sanità, banche e settore pubblico*"
+    nl: "C5:2020-gecertificeerde clouddienst – ideaal voor gezondheidszorg, banken en publieke sector*"
+    sv: "C5:2020-certifierad molntjänst – idealisk för sjukvård, bank och offentlig sektor*"
+    zh: "C5:2020 认证云服务 – 适用于医疗、银行和公共部门*"
+
+  features.title:
+    en: "Why KumoOps"
+    de: "Warum KumoOps"
+    da: "Hvorfor KumoOps"
+    es: "Por qué KumoOps"
+    fr: "Pourquoi KumoOps"
+    it: "Perché KumoOps"
+    nl: "Waarom KumoOps"
+    sv: "Varför KumoOps"
+    zh: "为什么选择 KumoOps"
+
+  clients.trustedBy:
+    en: "Trusted by"
+    de: "Vertraut von"
+    da: "Betroet af"
+    es: "Confían en nosotros"
+    fr: "Ils nous font confiance"
+    it: "Si fidano di noi"
+    nl: "Vertrouwd door"
+    sv: "Betrodd av"
+    zh: "信任我们的客户"
+
+  clients.more:
+    en: "+more"
+    de: "+mehr"
+    da: "+flere"
+    es: "+más"
+    fr: "+plus"
+    it: "+altri"
+    nl: "+meer"
+    sv: "+fler"
+    zh: "+更多"
+
+  pricing.startingFrom:
+    en: "Starting from"
+    de: "Ab"
+    da: "Fra"
+    es: "Desde"
+    fr: "À partir de"
+    it: "A partire da"
+    nl: "Vanaf"
+    sv: "Från"
+    zh: "起价"
+
+  pricing.perMonth:
+    en: "/month"
+    de: "/Monat"
+    da: "/måned"
+    es: "/mes"
+    fr: "/mois"
+    it: "/mese"
+    nl: "/maand"
+    sv: "/månad"
+    zh: "/月"
+
+  contact.role:
+    en: "CTO"
+    de: "CTO"
+    da: "CTO"
+    es: "CTO"
+    fr: "CTO"
+    it: "CTO"
+    nl: "CTO"
+    sv: "CTO"
+    zh: "CTO"
+
+  contact.cta:
+    en: "Let's discuss your cloud strategy"
+    de: "Lassen Sie uns über Ihre Cloud-Strategie sprechen"
+    da: "Lad os diskutere din cloudstrategi"
+    es: "Hablemos de tu estrategia cloud"
+    fr: "Discutons de votre stratégie cloud"
+    it: "Discutiamo della tua strategia cloud"
+    nl: "Laten we je cloudstrategie bespreken"
+    sv: "Låt oss diskutera din molnstrategi"
+    zh: "让我们讨论您的云战略"
+
+  disclaimer:
+    en: "*Currently in process, will be finished in 2026"
+    de: "*Derzeit in Bearbeitung, wird 2026 abgeschlossen"
+    da: "*I øjeblikket under behandling, afsluttes i 2026"
+    es: "*Actualmente en proceso, se completará en 2026"
+    fr: "*Actuellement en cours, sera terminé en 2026"
+    it: "*Attualmente in corso, sarà completato nel 2026"
+    nl: "*Momenteel in uitvoering, wordt afgerond in 2026"
+    sv: "*För närvarande under arbete, slutförs 2026"
+    zh: "*目前正在进行中，将于2026年完成"
+
+  print.button:
+    en: "Print / Save as PDF"
+    de: "Drucken / Als PDF speichern"
+    da: "Udskriv / Gem som PDF"
+    es: "Imprimir / Guardar como PDF"
+    fr: "Imprimer / Enregistrer en PDF"
+    it: "Stampa / Salva come PDF"
+    nl: "Afdrukken / Opslaan als PDF"
+    sv: "Skriv ut / Spara som PDF"
+    zh: "打印 / 另存为 PDF"
+
+metrics:
+  - name: infraCosts
+    label:
+      en: "Infrastructure Costs"
+      de: "Infrastrukturkosten"
+      da: "Infrastrukturomkostninger"
+      es: "Costos de Infraestructura"
+      fr: "Coûts d'Infrastructure"
+      it: "Costi Infrastruttura"
+      nl: "Infrastructuurkosten"
+      sv: "Infrastrukturkostnader"
+      zh: "基础设施成本"
+    sublabel:
+      en: "REDUCED"
+      de: "REDUZIERT"
+      da: "REDUCERET"
+      es: "REDUCIDOS"
+      fr: "RÉDUITS"
+      it: "RIDOTTI"
+      nl: "VERLAAGD"
+      sv: "REDUCERADE"
+      zh: "降低"
+
+  - name: incident
+    label:
+      en: "Incident Response"
+      de: "Reaktionszeit"
+      da: "Responstid"
+      es: "Tiempo de Respuesta"
+      fr: "Temps de Réponse"
+      it: "Tempo di Risposta"
+      nl: "Responstijd"
+      sv: "Svarstid"
+      zh: "响应时间"
+    sublabel:
+      en: "MEDIAN TIME"
+      de: "MEDIAN"
+      da: "MEDIAN"
+      es: "MEDIANA"
+      fr: "MÉDIAN"
+      it: "MEDIANO"
+      nl: "MEDIAAN"
+      sv: "MEDIAN"
+      zh: "中位数"
+
+  - name: downtime
+    label:
+      en: "Release Downtime"
+      de: "Release-Ausfallzeit"
+      da: "Nedetid ved Release"
+      es: "Tiempo de Inactividad"
+      fr: "Temps d'Arrêt"
+      it: "Downtime Release"
+      nl: "Release Downtime"
+      sv: "Driftstopp vid Release"
+      zh: "发布停机时间"
+    sublabel:
+      en: "FROM 180 TO 0"
+      de: "VON 180 AUF 0"
+      da: "FRA 180 TIL 0"
+      es: "DE 180 A 0"
+      fr: "DE 180 À 0"
+      it: "DA 180 A 0"
+      nl: "VAN 180 NAAR 0"
+      sv: "FRÅN 180 TILL 0"
+      zh: "从180降至0"
+
+  - name: sla
+    label:
+      en: "Service Level"
+      de: "Service-Level"
+      da: "Serviceniveau"
+      es: "Nivel de Servicio"
+      fr: "Niveau de Service"
+      it: "Livello di Servizio"
+      nl: "Serviceniveau"
+      sv: "Servicenivå"
+      zh: "服务级别"
+    sublabel:
+      en: "SLA GUARANTEED"
+      de: "SLA GARANTIERT"
+      da: "SLA GARANTERET"
+      es: "SLA GARANTIZADO"
+      fr: "SLA GARANTI"
+      it: "SLA GARANTITO"
+      nl: "SLA GEGARANDEERD"
+      sv: "SLA GARANTERAD"
+      zh: "SLA 保证"
+
+features:
+  - name: cloudSecOps
+    title:
+      en: "Complete CloudSecOps"
+      de: "Komplettes CloudSecOps"
+      da: "Komplet CloudSecOps"
+      es: "CloudSecOps Completo"
+      fr: "CloudSecOps Complet"
+      it: "CloudSecOps Completo"
+      nl: "Complete CloudSecOps"
+      sv: "Komplett CloudSecOps"
+      zh: "完整的 CloudSecOps"
+    description:
+      en: "We handle hosting, SLAs, GitOps, and Infrastructure as Code."
+      de: "Wir übernehmen Hosting, SLAs, GitOps und Infrastructure as Code."
+      da: "Vi håndterer hosting, SLA'er, GitOps og Infrastructure as Code."
+      es: "Gestionamos alojamiento, SLAs, GitOps e Infrastructure as Code."
+      fr: "Nous gérons l'hébergement, les SLAs, GitOps et l'Infrastructure as Code."
+      it: "Gestiamo hosting, SLA, GitOps e Infrastructure as Code."
+      nl: "Wij regelen hosting, SLA's, GitOps en Infrastructure as Code."
+      sv: "Vi hanterar hosting, SLA:er, GitOps och Infrastructure as Code."
+      zh: "我们处理托管、SLA、GitOps 和基础设施即代码。"
+
+  - name: devPlatform
+    title:
+      en: "Developer Platform"
+      de: "Developer Platform"
+      da: "Udviklerplatform"
+      es: "Plataforma de Desarrollo"
+      fr: "Plateforme Développeur"
+      it: "Piattaforma Developer"
+      nl: "Developer Platform"
+      sv: "Utvecklarplattform"
+      zh: "开发者平台"
+    description:
+      en: "Launch and scale your apps instantly with full automation."
+      de: "Starten und skalieren Sie Ihre Apps sofort mit voller Automatisierung."
+      da: "Start og skaler dine apps øjeblikkeligt med fuld automatisering."
+      es: "Lanza y escala tus apps al instante con automatización completa."
+      fr: "Lancez et faites évoluer vos apps instantanément avec une automatisation complète."
+      it: "Lancia e scala le tue app istantaneamente con automazione completa."
+      nl: "Start en schaal je apps direct met volledige automatisering."
+      sv: "Starta och skala dina appar direkt med full automatisering."
+      zh: "通过全自动化即时启动和扩展您的应用。"
+
+  - name: addons
+    title:
+      en: "31+ Add-Ons"
+      de: "31+ Add-Ons"
+      da: "31+ Tilføjelser"
+      es: "31+ Complementos"
+      fr: "31+ Extensions"
+      it: "31+ Add-On"
+      nl: "31+ Add-Ons"
+      sv: "31+ Tillägg"
+      zh: "31+ 附加组件"
+    description:
+      en: "Customize your cloud platform or request tailored solutions."
+      de: "Passen Sie Ihre Cloud-Plattform an oder fordern Sie maßgeschneiderte Lösungen an."
+      da: "Tilpas din cloudplatform eller anmod om skræddersyede løsninger."
+      es: "Personaliza tu plataforma cloud o solicita soluciones a medida."
+      fr: "Personnalisez votre plateforme cloud ou demandez des solutions sur mesure."
+      it: "Personalizza la tua piattaforma cloud o richiedi soluzioni su misura."
+      nl: "Pas je cloudplatform aan of vraag maatwerkoplossingen aan."
+      sv: "Anpassa din molnplattform eller begär skräddarsydda lösningar."
+      zh: "定制您的云平台或请求定制解决方案。"
+
+  - name: reliability
+    title:
+      en: "24/7 Reliability"
+      de: "24/7 Zuverlässigkeit"
+      da: "24/7 Pålidelighed"
+      es: "Fiabilidad 24/7"
+      fr: "Fiabilité 24/7"
+      it: "Affidabilità 24/7"
+      nl: "24/7 Betrouwbaarheid"
+      sv: "24/7 Tillförlitlighet"
+      zh: "24/7 可靠性"
+    description:
+      en: "Around-the-clock monitoring and SLA-backed operations."
+      de: "Überwachung rund um die Uhr und SLA-gestützter Betrieb."
+      da: "Overvågning døgnet rundt og SLA-understøttet drift."
+      es: "Monitoreo continuo y operaciones respaldadas por SLA."
+      fr: "Surveillance continue et opérations garanties par SLA."
+      it: "Monitoraggio continuo e operazioni supportate da SLA."
+      nl: "Doorlopende monitoring en SLA-ondersteunde operaties."
+      sv: "Övervakning dygnet runt och SLA-stödd drift."
+      zh: "全天候监控和 SLA 支持的运营。"
+
+  - name: cloudIndependent
+    title:
+      en: "Cloud Independent"
+      de: "Cloud-unabhängig"
+      da: "Cloud-uafhængig"
+      es: "Independiente del Cloud"
+      fr: "Indépendant du Cloud"
+      it: "Indipendente dal Cloud"
+      nl: "Cloud-onafhankelijk"
+      sv: "Molnoberoende"
+      zh: "云独立"
+    description:
+      en: "Compatible with all major clouds – sovereign and flexible."
+      de: "Kompatibel mit allen großen Clouds – souverän und flexibel."
+      da: "Kompatibel med alle store clouds – suveræn og fleksibel."
+      es: "Compatible con todas las nubes principales – soberano y flexible."
+      fr: "Compatible avec tous les grands clouds – souverain et flexible."
+      it: "Compatibile con tutti i principali cloud – sovrano e flessibile."
+      nl: "Compatibel met alle grote clouds – soeverein en flexibel."
+      sv: "Kompatibel med alla stora moln – suverän och flexibel."
+      zh: "兼容所有主要云——自主且灵活。"
+
+  - name: expertise
+    title:
+      en: "Proven Expertise"
+      de: "Bewährte Expertise"
+      da: "Bevist Ekspertise"
+      es: "Experiencia Comprobada"
+      fr: "Expertise Prouvée"
+      it: "Esperienza Comprovata"
+      nl: "Bewezen Expertise"
+      sv: "Bevisad Expertis"
+      zh: "经验证的专业知识"
+    description:
+      en: "Trusted in cloud infrastructure, DevOps, and development."
+      de: "Vertraut in Cloud-Infrastruktur, DevOps und Entwicklung."
+      da: "Betroet inden for cloudinfrastruktur, DevOps og udvikling."
+      es: "Confianza en infraestructura cloud, DevOps y desarrollo."
+      fr: "Reconnu en infrastructure cloud, DevOps et développement."
+      it: "Affidabilità in infrastruttura cloud, DevOps e sviluppo."
+      nl: "Vertrouwd in cloudinfrastructuur, DevOps en ontwikkeling."
+      sv: "Betrodd inom molninfrastruktur, DevOps och utveckling."
+      zh: "在云基础设施、DevOps 和开发方面值得信赖。"

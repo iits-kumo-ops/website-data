@@ -9,8 +9,8 @@
       },
     },
     "packages/addons": {
-      "name": "@kumo-ops/addons",
-      "version": "1.0.0",
+      "name": "@iits-kumo-ops/data-addons",
+      "version": "1.0.1",
       "devDependencies": {
         "@types/bun": "^1.1.0",
         "@types/js-yaml": "^4.0.9",
@@ -18,14 +18,23 @@
       },
     },
     "packages/offer-description": {
-      "name": "@kumo-ops/offer-description",
-      "version": "1.0.0",
+      "name": "@iits-kumo-ops/data-offer-description",
+      "version": "1.0.1",
       "devDependencies": {
         "@types/bun": "^1.1.0",
       },
     },
+    "packages/onepager": {
+      "name": "@iits-kumo-ops/data-onepager",
+      "version": "1.0.0",
+      "devDependencies": {
+        "@types/bun": "^1.1.0",
+        "@types/js-yaml": "^4.0.9",
+        "js-yaml": "^4.1.0",
+      },
+    },
     "packages/onepager-opentelekomcloud": {
-      "name": "@kumo-ops/onepager-opentelekomcloud",
+      "name": "@iits-kumo-ops/data-onepager-opentelekomcloud",
       "version": "1.0.0",
       "devDependencies": {
         "@types/bun": "^1.1.0",
@@ -33,11 +42,13 @@
     },
   },
   "packages": {
-    "@kumo-ops/addons": ["@kumo-ops/addons@workspace:packages/addons"],
+    "@iits-kumo-ops/data-addons": ["@iits-kumo-ops/data-addons@workspace:packages/addons"],
 
-    "@kumo-ops/offer-description": ["@kumo-ops/offer-description@workspace:packages/offer-description"],
+    "@iits-kumo-ops/data-offer-description": ["@iits-kumo-ops/data-offer-description@workspace:packages/offer-description"],
 
-    "@kumo-ops/onepager-opentelekomcloud": ["@kumo-ops/onepager-opentelekomcloud@workspace:packages/onepager-opentelekomcloud"],
+    "@iits-kumo-ops/data-onepager": ["@iits-kumo-ops/data-onepager@workspace:packages/onepager"],
+
+    "@iits-kumo-ops/data-onepager-opentelekomcloud": ["@iits-kumo-ops/data-onepager-opentelekomcloud@workspace:packages/onepager-opentelekomcloud"],
 
     "@types/bun": ["@types/bun@1.3.8", "", { "dependencies": { "bun-types": "1.3.8" } }, "sha512-3LvWJ2q5GerAXYxO2mffLTqOzEu5qnhEAlh48Vnu8WQfnmSwbgagjGZV6BoHKJztENYEDn6QmVd949W4uESRJA=="],
 

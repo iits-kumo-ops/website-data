@@ -1,0 +1,278 @@
+#!/usr/bin/env bun
+/**
+ * Generate locale JSON files from YAML source data
+ *
+ * This script reads the onepager.yaml file and generates separate JSON files
+ * for each supported locale with flat keys like `feature.cloudSecOps.title`.
+ */
+
+import * as yaml from "js-yaml";
+import * as fs from "fs";
+import * as path from "path";
+import { execSync } from "child_process";
+
+const PACKAGE_DIR = path.join(import.meta.dir, "..");
+const DATA_DIR = path.join(PACKAGE_DIR, "data");
+const OUTPUT_DIR = path.join(PACKAGE_DIR, "dist", "locales");
+const SRC_DIR = path.join(PACKAGE_DIR, "src");
+
+const EXPECTED_METRICS = 4;
+const EXPECTED_FEATURES = 6;
+
+interface LocalizedString {
+  [locale: string]: string;
+}
+
+interface MetricData {
+  name: string;
+  label: LocalizedString;
+  sublabel: LocalizedString;
+}
+
+interface FeatureData {
+  name: string;
+  title: LocalizedString;
+  description: LocalizedString;
+}
+
+interface YamlData {
+  description: string;
+  supportedLocales: string[];
+  strings: Record<string, LocalizedString>;
+  metrics: MetricData[];
+  features: FeatureData[];
+}
+
+interface MetaInfo {
+  version: string;
+  lastUpdated: string;
+}
+
+function getGitInfo(): { commitHash: string; commitDate: string } {
+  try {
+    const commitHash = execSync("git rev-parse --short HEAD", {
+      encoding: "utf-8",
+      cwd: PACKAGE_DIR,
+    }).trim();
+
+    const commitDate = execSync("git log -1 --format=%cI", {
+      encoding: "utf-8",
+      cwd: PACKAGE_DIR,
+    }).trim();
+
+    const formattedDate = commitDate.split("T")[0];
+
+    return { commitHash, commitDate: formattedDate };
+  } catch {
+    console.warn("Warning: Could not get git info, using fallback values");
+    return {
+      commitHash: "dev",
+      commitDate: new Date().toISOString().split("T")[0],
+    };
+  }
+}
+
+function getPackageVersion(): string {
+  const packageJsonPath = path.join(PACKAGE_DIR, "package.json");
+  const packageJson = JSON.parse(fs.readFileSync(packageJsonPath, "utf-8"));
+  return packageJson.version;
+}
+
+function buildMeta(): MetaInfo {
+  const packageVersion = getPackageVersion();
+  const { commitHash, commitDate } = getGitInfo();
+
+  return {
+    version: `${packageVersion}-${commitHash}`,
+    lastUpdated: commitDate,
+  };
+}
+
+function extractLocale(
+  data: YamlData,
+  locale: string,
+  meta: MetaInfo
+): Record<string, string | MetaInfo> {
+  const output: Record<string, string | MetaInfo> = {
+    meta,
+  };
+
+  // Extract simple strings
+  for (const [key, translations] of Object.entries(data.strings)) {
+    output[key] = translations[locale] || translations.en;
+  }
+
+  // Extract metrics as flat keys: metric.{name}, metric.{name}.sublabel
+  for (const metric of data.metrics) {
+    output[`metric.${metric.name}`] = metric.label[locale] || metric.label.en;
+    output[`metric.${metric.name}.sublabel`] =
+      metric.sublabel[locale] || metric.sublabel.en;
+  }
+
+  // Extract features as flat keys: feature.{name}.title, feature.{name}.description
+  for (const feature of data.features) {
+    output[`feature.${feature.name}.title`] =
+      feature.title[locale] || feature.title.en;
+    output[`feature.${feature.name}.description`] =
+      feature.description[locale] || feature.description.en;
+  }
+
+  return output;
+}
+
+function validateYamlData(data: YamlData): { errors: string[]; fatal: boolean } {
+  const errors: string[] = [];
+  let fatal = false;
+  const locales = data.supportedLocales;
+
+  // Validate metric and feature counts
+  if (data.metrics.length !== EXPECTED_METRICS) {
+    errors.push(
+      `Expected ${EXPECTED_METRICS} metrics, found ${data.metrics.length}`
+    );
+    fatal = true;
+  }
+  if (data.features.length !== EXPECTED_FEATURES) {
+    errors.push(
+      `Expected ${EXPECTED_FEATURES} features, found ${data.features.length}`
+    );
+    fatal = true;
+  }
+
+  // Validate strings
+  for (const [key, translations] of Object.entries(data.strings)) {
+    for (const locale of locales) {
+      if (!translations[locale]) {
+        errors.push(`Missing translation for "${key}" in locale: ${locale}`);
+      }
+    }
+  }
+
+  // Validate metrics
+  for (const metric of data.metrics) {
+    for (const locale of locales) {
+      if (!metric.label[locale]) {
+        errors.push(
+          `Missing label for metric "${metric.name}" in locale: ${locale}`
+        );
+      }
+      if (!metric.sublabel[locale]) {
+        errors.push(
+          `Missing sublabel for metric "${metric.name}" in locale: ${locale}`
+        );
+      }
+    }
+  }
+
+  // Validate features
+  for (const feature of data.features) {
+    for (const locale of locales) {
+      if (!feature.title[locale]) {
+        errors.push(
+          `Missing title for feature "${feature.name}" in locale: ${locale}`
+        );
+      }
+      if (!feature.description[locale]) {
+        errors.push(
+          `Missing description for feature "${feature.name}" in locale: ${locale}`
+        );
+      }
+    }
+  }
+
+  return { errors, fatal };
+}
+
+function generateIndexTs(data: YamlData): void {
+  const metricNames = data.metrics.map((m) => m.name);
+  const featureNames = data.features.map((f) => f.name);
+
+  const content = `/**
+ * Auto-generated by generate-locales.ts
+ * Do not edit manually
+ */
+
+export const METRIC_NAMES = ${JSON.stringify(metricNames, null, 2)} as const;
+
+export const FEATURE_NAMES = ${JSON.stringify(featureNames, null, 2)} as const;
+
+export type MetricName = (typeof METRIC_NAMES)[number];
+export type FeatureName = (typeof FEATURE_NAMES)[number];
+`;
+
+  if (!fs.existsSync(SRC_DIR)) {
+    fs.mkdirSync(SRC_DIR, { recursive: true });
+  }
+
+  fs.writeFileSync(path.join(SRC_DIR, "index.ts"), content);
+  console.log("  - Generated src/index.ts");
+}
+
+function main() {
+  console.log("Generating locale files from YAML source...\n");
+
+  // Read YAML source
+  const yamlPath = path.join(DATA_DIR, "onepager.yaml");
+  if (!fs.existsSync(yamlPath)) {
+    console.error(`Error: YAML source file not found at ${yamlPath}`);
+    process.exit(1);
+  }
+
+  const yamlContent = fs.readFileSync(yamlPath, "utf-8");
+  const data = yaml.load(yamlContent) as YamlData;
+
+  // Build meta from package version and git info
+  const meta = buildMeta();
+  console.log(`Version: ${meta.version}`);
+  console.log(`Last Updated: ${meta.lastUpdated}`);
+  console.log("");
+
+  // Validate data
+  console.log("Validating YAML data...");
+  const { errors, fatal } = validateYamlData(data);
+  if (errors.length > 0) {
+    console.warn("\nValidation warnings:");
+    errors.forEach((err) => console.warn(`  - ${err}`));
+    console.log("");
+  }
+  if (fatal) {
+    console.error("Fatal validation errors, aborting.");
+    process.exit(1);
+  }
+
+  // Ensure output directory exists
+  if (!fs.existsSync(OUTPUT_DIR)) {
+    fs.mkdirSync(OUTPUT_DIR, { recursive: true });
+  }
+
+  // Generate locale files
+  const locales = data.supportedLocales;
+  console.log(`Generating ${locales.length} locale files...`);
+
+  for (const locale of locales) {
+    const localeData = extractLocale(data, locale, meta);
+    const outputPath = path.join(OUTPUT_DIR, `${locale}.json`);
+
+    fs.writeFileSync(outputPath, JSON.stringify(localeData, null, 2) + "\n");
+    console.log(`  - Generated ${locale}.json`);
+  }
+
+  // Generate index.ts with const exports
+  generateIndexTs(data);
+
+  // Generate summary
+  const stringCount = Object.keys(data.strings).length;
+  const metricCount = data.metrics.length;
+  const featureCount = data.features.length;
+  const totalKeys = stringCount + metricCount * 2 + featureCount * 2;
+
+  console.log("\nGeneration complete!");
+  console.log(`  Strings: ${stringCount}`);
+  console.log(`  Metrics: ${metricCount}`);
+  console.log(`  Features: ${featureCount}`);
+  console.log(`  Total keys: ${totalKeys}`);
+  console.log(`  Locales: ${locales.join(", ")}`);
+  console.log(`  Output: ${OUTPUT_DIR}`);
+}
+
+main();

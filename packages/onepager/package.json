@@ -1,0 +1,44 @@
+{
+  "name": "@iits-kumo-ops/data-onepager",
+  "version": "1.0.0",
+  "description": "KumoOps onepager locale files",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "generate": "bun run scripts/generate-locales.ts",
+    "build": "bun run generate && tsc"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./locales/*": "./dist/locales/*"
+  },
+  "keywords": [
+    "kumoops",
+    "onepager",
+    "locales",
+    "i18n"
+  ],
+  "author": "KumoOps",
+  "license": "UNLICENSED",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com",
+    "access": "restricted"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.1.0",
+    "@types/js-yaml": "^4.0.9",
+    "js-yaml": "^4.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iits-kumo-ops/website-data.git",
+    "directory": "packages/onepager"
+  }
+}
