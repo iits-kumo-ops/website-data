@@ -218,6 +218,7 @@ strings:
 
 metrics:
   - name: infraCosts
+    value: "50%"
     label:
       en: "Infrastructure Costs"
       de: "Infrastrukturkosten"
@@ -240,6 +241,7 @@ metrics:
       zh: "降低"
 
   - name: incident
+    value: "<5 MIN"
     label:
       en: "Incident Response"
       de: "Reaktionszeit"
@@ -262,6 +264,7 @@ metrics:
       zh: "中位数"
 
   - name: downtime
+    value: "0 MIN"
     label:
       en: "Release Downtime"
       de: "Release-Ausfallzeit"
@@ -284,6 +287,7 @@ metrics:
       zh: "从180降至0"
 
   - name: sla
+    value: "99.95%"
     label:
       en: "Service Level"
       de: "Service-Level"
@@ -307,6 +311,7 @@ metrics:
 
 features:
   - name: cloudSecOps
+    iconName: server
     title:
       en: "Complete CloudSecOps"
       de: "Komplettes CloudSecOps"
@@ -329,6 +334,7 @@ features:
       zh: "我们处理托管、SLA、GitOps 和基础设施即代码。"
 
   - name: devPlatform
+    iconName: zap
     title:
       en: "Developer Platform"
       de: "Developer Platform"
@@ -351,6 +357,7 @@ features:
       zh: "通过全自动化即时启动和扩展您的应用。"
 
   - name: addons
+    iconName: package
     title:
       en: "31+ Add-Ons"
       de: "31+ Add-Ons"
@@ -373,6 +380,7 @@ features:
       zh: "定制您的云平台或请求定制解决方案。"
 
   - name: reliability
+    iconName: clock
     title:
       en: "24/7 Reliability"
       de: "24/7 Zuverlässigkeit"
@@ -395,6 +403,7 @@ features:
       zh: "全天候监控和 SLA 支持的运营。"
 
   - name: cloudIndependent
+    iconName: cloud
     title:
       en: "Cloud Independent"
       de: "Cloud-unabhängig"
@@ -417,6 +426,7 @@ features:
       zh: "兼容所有主要云——自主且灵活。"
 
   - name: expertise
+    iconName: users
     title:
       en: "Proven Expertise"
       de: "Bewährte Expertise"

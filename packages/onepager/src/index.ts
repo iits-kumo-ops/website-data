@@ -31,6 +31,52 @@ export const FEATURE_NAMES = [
   "expertise"
 ] as const;
 
+export const METRICS = [
+  {
+    "name": "infraCosts",
+    "value": "50%"
+  },
+  {
+    "name": "incident",
+    "value": "<5 MIN"
+  },
+  {
+    "name": "downtime",
+    "value": "0 MIN"
+  },
+  {
+    "name": "sla",
+    "value": "99.95%"
+  }
+] as const;
+
+export const FEATURES = [
+  {
+    "name": "cloudSecOps",
+    "iconName": "server"
+  },
+  {
+    "name": "devPlatform",
+    "iconName": "zap"
+  },
+  {
+    "name": "addons",
+    "iconName": "package"
+  },
+  {
+    "name": "reliability",
+    "iconName": "clock"
+  },
+  {
+    "name": "cloudIndependent",
+    "iconName": "cloud"
+  },
+  {
+    "name": "expertise",
+    "iconName": "users"
+  }
+] as const;
+
 export type Locale = (typeof LOCALES)[number];
 export type MetricName = (typeof METRIC_NAMES)[number];
 export type FeatureName = (typeof FEATURE_NAMES)[number];
