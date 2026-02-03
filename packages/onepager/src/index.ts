@@ -3,6 +3,18 @@
  * Do not edit manually
  */
 
+export const LOCALES = [
+  "en",
+  "de",
+  "da",
+  "es",
+  "fr",
+  "it",
+  "nl",
+  "sv",
+  "zh"
+] as const;
+
 export const METRIC_NAMES = [
   "infraCosts",
   "incident",
@@ -19,5 +31,6 @@ export const FEATURE_NAMES = [
   "expertise"
 ] as const;
 
+export type Locale = (typeof LOCALES)[number];
 export type MetricName = (typeof METRIC_NAMES)[number];
 export type FeatureName = (typeof FEATURE_NAMES)[number];
