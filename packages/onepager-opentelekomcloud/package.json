@@ -3,14 +3,21 @@
   "version": "1.0.0",
   "description": "KumoOps OpenTelekomCloud onepager locale files",
   "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "files": [
     "dist"
   ],
   "scripts": {
-    "build": "bun run scripts/build.ts"
+    "generate": "bun run scripts/generate-locales.ts",
+    "build": "bun run generate && tsc"
   },
   "exports": {
-    "./locales/*": "./dist/*"
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./locales/*": "./dist/locales/*"
   },
   "keywords": [
     "kumoops",
@@ -26,7 +33,9 @@
     "access": "restricted"
   },
   "devDependencies": {
-    "@types/bun": "^1.1.0"
+    "@types/bun": "^1.1.0",
+    "@types/js-yaml": "^4.0.9",
+    "js-yaml": "^4.1.0"
   },
   "repository": {
     "type": "git",

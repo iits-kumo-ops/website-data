@@ -1,0 +1,297 @@
+# KumoOps OpenTelekomCloud onepager locale data
+#
+# Structure requirements:
+# - metrics: exactly 4 items (validated at build time)
+# - features: exactly 6 items (validated at build time)
+
+description: "KumoOps OpenTelekomCloud onepager locale data"
+
+contact:
+  name: "Victor Getz"
+  role: "CTO"
+  email: "victor.getz@iits-consulting.de"
+  linkedin: "linkedin.com/in/victor-getz"
+  website: "kumo-ops.com"
+
+links:
+  certifications: "https://www.open-telekom-cloud.com/en/products-services/core-services/certifications"
+  pricing: "https://calendly.com/victor-getz/kumoops-intro"
+
+supportedLocales:
+  - en
+  - de
+  - da
+
+strings:
+  print.button:
+    en: "Print / Save as PDF"
+    de: "Drucken / Als PDF speichern"
+    da: "Udskriv / Gem som PDF"
+
+  badge.sovereignty:
+    en: "Data Sovereignty Solution"
+    de: "Daten­souveränitäts-Lösung"
+    da: "Løsning til datasuverænitet"
+
+  header.brand:
+    en: "KumoOps"
+    de: "KumoOps"
+    da: "KumoOps"
+
+  header.safetyMessage:
+    en: "Don't hand your data to US authorities."
+    de: "Geben Sie US-Behörden nicht Ihre Daten."
+    da: "Giv ikke dine data til amerikanske myndigheder."
+
+  header.partnerBadge:
+    en: "OpenTelekomCloud Partner"
+    de: "OpenTelekomCloud Partner"
+    da: "OpenTelekomCloud-partner"
+
+  hero.title.part1:
+    en: "Migrate from US Hyperscalers to"
+    de: "Wechseln Sie von US-Hyperscalern zu"
+    da: "Migrér fra amerikanske hyperscalere til"
+
+  hero.title.highlight:
+    en: "OpenTelekomCloud"
+    de: "OpenTelekomCloud"
+    da: "OpenTelekomCloud"
+
+  hero.title.part2:
+    en: "in 4 Weeks"
+    de: "in 4 Wochen"
+    da: "på 4 uger"
+
+  hero.subtitle:
+    en: "No more data sent to the US"
+    de: "Keine Daten mehr, die in die USA gehen"
+    da: "Ingen data sendes længere til USA"
+
+  hero.cta:
+    en: "Full migration with zero downtime, guaranteed data sovereignty."
+    de: "Vollständige Migration ohne Downtime – garantierte Datensouveränität."
+    da: "Fuld migration uden nedetid – garanteret datasuverænitet."
+
+  need.title:
+    en: "Why migrate away from US hyperscalers now?"
+    de: "Warum jetzt von US-Hyperscalern weg migrieren?"
+    da: "Hvorfor migrere væk fra amerikanske hyperscalere nu?"
+
+  need.description:
+    en: "The US CLOUD Act grants American authorities access to data stored by US companies — even on EU servers. Schrems II invalidated the Privacy Shield. Your compliance is at risk. OpenTelekomCloud keeps your data in German data centers, operated exclusively under EU law by Deutsche Telekom / T-Systems."
+    de: "Der US CLOUD Act gewährt US-Behörden Zugriff auf Daten, die von US-Unternehmen gespeichert werden – selbst auf EU-Servern. Schrems II hat das Privacy Shield für ungültig erklärt. Ihre Compliance ist gefährdet. OpenTelekomCloud hält Ihre Daten in deutschen Rechenzentren – ausschließlich nach EU-Recht betrieben von Deutsche Telekom / T-Systems."
+    da: "US CLOUD Act giver amerikanske myndigheder adgang til data, der opbevares af amerikanske virksomheder – selv på EU-servere. Schrems II ugyldiggjorde Privacy Shield. Din compliance er i fare. OpenTelekomCloud holder dine data i tyske datacentre, drevet udelukkende under EU-lovgivning af Deutsche Telekom / T-Systems."
+
+  usCloud.title:
+    en: "US CLOUD Act Risk"
+    de: "Risiko durch den US CLOUD Act"
+    da: "Risiko ved US CLOUD Act"
+
+  usCloud.description:
+    en: "US cloud providers are subject to the US CLOUD Act. US authorities may access your data at any time even if it's stored on EU servers."
+    de: "US-Cloud-Anbieter unterliegen dem US CLOUD Act. US-Behörden können jederzeit auf Ihre Daten zugreifen – selbst wenn diese auf EU-Servern gespeichert sind."
+    da: "Amerikanske cloududbydere er omfattet af US CLOUD Act. Amerikanske myndigheder kan til enhver tid få adgang til dine data – selv hvis de er lagret på EU-servere."
+
+  euCloud.title:
+    en: "EU Data Sovereignty"
+    de: "EU-Datensouveränität"
+    da: "EU-datasuverænitet"
+
+  euCloud.otc:
+    en: "OpenTelekomCloud"
+    de: "OpenTelekomCloud"
+    da: "OpenTelekomCloud"
+
+  euCloud.safe:
+    en: "100% EU jurisdiction — Deutsche Telekom operated"
+    de: "100% EU-Rechtsraum — betrieben von Deutsche Telekom"
+    da: "100% EU-jurisdiktion — drevet af Deutsche Telekom"
+
+  euCloud.description:
+    en: "Play it safe: migrate today to a 100% European, GDPR-compliant cloud. Operated by a german company and hosted on a EU cloud."
+    de: "Gehen Sie auf Nummer sicher: Wechseln Sie jetzt in eine 100% europäische, DSGVO-konforme Cloud. Betrieben von einem deutschen Unternehmen und in der EU gehostet."
+    da: "Vær på den sikre side: migrér i dag til en 100% europæisk, GDPR-kompatibel cloud. Drevet af en tysk virksomhed og hostet i EU."
+
+  migration.arrow:
+    en: "4 Weeks"
+    de: "4 Wochen"
+    da: "4 uger"
+
+  features.title:
+    en: "Why KumoOps"
+    de: "Warum KumoOps"
+    da: "Hvorfor KumoOps"
+
+  cert.title:
+    en: "Certifications & Compliance"
+    de: "Zertifizierungen & Compliance"
+    da: "Certificeringer & compliance"
+
+  cert.more:
+    en: "Many more"
+    de: "Viele weitere"
+    da: "Mange flere"
+
+  compliance.title:
+    en: "Enterprise-Grade Compliance, Audited & Proven"
+    de: "Enterprise-Compliance – geprüft & bewährt"
+    da: "Enterprise-grade compliance – revideret & dokumenteret"
+
+  pricing.startingFrom:
+    en: "Starting from"
+    de: "Ab"
+    da: "Fra"
+
+  pricing.amount:
+    en: "€8,000"
+    de: "8.000€"
+    da: "€8.000"
+
+  pricing.perMonth:
+    en: "/month"
+    de: "/Monat"
+    da: "/måned"
+
+  pricing.description:
+    en: "Includes migration and ongoing CloudSecOps"
+    de: "Enthält Migration und laufende CloudSecOps"
+    da: "Inkluderer migration og løbende CloudSecOps"
+
+  pricing.cta:
+    en: "Get Your Free Migration Plan"
+    de: "Jetzt kostenlosen Migrationsplan sichern"
+    da: "Få din gratis migrationsplan"
+
+  clients.trustedBy:
+    en: "Trusted by"
+    de: "Vertrauen uns"
+    da: "Betroet af"
+
+  clients.more:
+    en: "more"
+    de: "mehr"
+    da: "+mere"
+
+  contact.title:
+    en: "Talk to an Expert"
+    de: "Mit einem Experten sprechen"
+    da: "Tal med en ekspert"
+
+  contact.cta:
+    en: "Let's discuss your migration to OpenTelekomCloud"
+    de: "Lassen Sie uns über Ihre Migration zur OpenTelekomCloud sprechen"
+    da: "Lad os tale om din migration til OpenTelekomCloud"
+
+  disclaimer:
+    en: "*Currently in process, will be most probably finished in 2026"
+    de: "*Derzeit in Arbeit; voraussichtlich abgeschlossen im Jahr 2026"
+    da: "*Under udarbejdelse; forventes sandsynligvis afsluttet i 2026"
+
+metrics:
+  - name: migration
+    label:
+      en: "4 Weeks"
+      de: "4 Wochen"
+      da: "4 uger"
+    sublabel:
+      en: "FULL MIGRATION"
+      de: "VOLLSTÄNDIGE MIGRATION"
+      da: "FULD MIGRATION"
+
+  - name: dataInEU
+    label:
+      en: "100%"
+      de: "100%"
+      da: "100%"
+    sublabel:
+      en: "DATA IN EU"
+      de: "DATEN IN DER EU"
+      da: "DATA I EU"
+
+  - name: downtime
+    label:
+      en: "0 MIN"
+      de: "0 MIN"
+      da: "0 MIN"
+    sublabel:
+      en: "DOWNTIME"
+      de: "DOWNTIME"
+      da: "NEDETID"
+
+  - name: compliant
+    label:
+      en: "GDPR"
+      de: "DSGVO"
+      da: "GDPR"
+    sublabel:
+      en: "COMPLIANT"
+      de: "KONFORM"
+      da: "KOMPATIBEL"
+
+features:
+  - name: experience
+    iconName: award
+    title:
+      en: "Proven Expertise"
+      de: "Bewährte Expertise"
+      da: "Dokumenteret erfaring"
+    description:
+      en: "We've led 100+ successful migrations to OpenTelekomCloud, from startups to platforms with millions of daily users."
+      de: "Wir haben 100+ erfolgreiche Migrationen zur OpenTelekomCloud durchgeführt – von Start-ups bis zu Plattformen mit Millionen täglichen Nutzern."
+      da: "Vi har gennemført 100+ succesfulde migrationer til OpenTelekomCloud – fra startups til platforme med millioner af daglige brugere."
+
+  - name: cloudSecOps
+    iconName: users
+    title:
+      en: "CloudSecOps as a Service"
+      de: "CloudSecOps as a Service"
+      da: "CloudSecOps som en service"
+    description:
+      en: "Not only the migration is included but you get a full CloudSecOps Team which will maintain and operate the cloud for you"
+      de: "Nicht nur die Migration ist enthalten: Sie erhalten ein komplettes CloudSecOps-Team, das Ihre Cloud für Sie betreibt und weiterentwickelt."
+      da: "Ikke kun migrationen er inkluderet – du får også et fuldt CloudSecOps-team, der vedligeholder og drifter din cloud."
+
+  - name: compliance
+    iconName: badge-check
+    title:
+      en: "Certified out of the box"
+      de: "Zertifiziert out of the box"
+      da: "Certificeret out of the box"
+    description:
+      en: "With us operations, service and infrastructure is already certified*. We can get you certified in no time"
+      de: "Mit uns sind Betrieb, Service und Infrastruktur bereits zertifiziert*. Wir bringen Sie in kürzester Zeit zur Zertifizierung."
+      da: "Med os er drift, service og infrastruktur allerede certificeret*. Vi kan hjælpe dig med at blive certificeret på ingen tid."
+
+  - name: migration
+    iconName: zap
+    title:
+      en: "Seamless Migration"
+      de: "Nahtlose Migration"
+      da: "Problemfri migration"
+    description:
+      en: "Zero-downtime migration with rollback capabilities and comprehensive testing."
+      de: "Migration ohne Downtime – mit Rollback-Möglichkeiten und umfassenden Tests."
+      da: "Migration uden nedetid med rollback-muligheder og omfattende test."
+
+  - name: security
+    iconName: shield-check
+    title:
+      en: "Enhanced Security"
+      de: "Erhöhte Sicherheit"
+      da: "Forbedret sikkerhed"
+    description:
+      en: "European CloudSecOps team and data centers with no US jurisdiction. Your data stays in the EU."
+      de: "Europäisches CloudSecOps-Team und Rechenzentren ohne US-Rechtszugriff. Ihre Daten bleiben in der EU."
+      da: "Europæisk CloudSecOps-team og datacentre uden amerikansk jurisdiktion. Dine data bliver i EU."
+
+  - name: cost
+    iconName: file-text
+    title:
+      en: "Free Migration Plan"
+      de: "Kostenloser Migrationsplan"
+      da: "Gratis migrationsplan"
+    description:
+      en: "Let our team analyze your current US cloud setup and we create a free migration roadmap for you."
+      de: "Wir analysieren Ihre aktuelle US-Cloud-Umgebung und erstellen kostenlos eine Migrations-Roadmap für Sie."
+      da: "Lad vores team analysere din nuværende US-cloud-opsætning, så udarbejder vi en gratis migrations-roadmap til dig."
