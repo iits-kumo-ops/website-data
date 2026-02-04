@@ -10,7 +10,7 @@
   ],
   "scripts": {
     "generate": "bun run scripts/generate-locales.ts",
-    "build": "bun run generate && tsc"
+    "build": "sh -c 'bun run scripts/generate-locales.ts \"$@\" && tsc' --"
   },
   "exports": {
     ".": {

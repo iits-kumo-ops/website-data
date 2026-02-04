@@ -19,6 +19,8 @@ const SRC_DIR = path.join(PACKAGE_DIR, "src");
 const EXPECTED_METRICS = 4;
 const EXPECTED_FEATURES = 6;
 
+const ignoreWarnings = Bun.argv.includes("--ignore-warnings");
+
 interface LocalizedString {
   [locale: string]: string;
 }
@@ -227,8 +229,13 @@ function main() {
     console.log("");
   }
   if (fatal) {
-    console.error("Fatal validation errors, aborting.");
-    process.exit(1);
+    if (ignoreWarnings) {
+      console.warn("Fatal validation errors ignored due to --ignore-warnings flag.");
+    } else {
+      console.error("Fatal validation errors, aborting.");
+      console.error("Use --ignore-warnings to build anyway.");
+      process.exit(1);
+    }
   }
 
   // Ensure output directory exists
