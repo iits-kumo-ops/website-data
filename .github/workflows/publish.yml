@@ -198,9 +198,6 @@ jobs:
           repository: iits-kumo-ops/kumo-ops-website
           token: ${{ secrets.CONSUMER_REPO_PAT }}
 
-      - name: Configure npm registry
-        run: echo "@iits-kumo-ops:registry=https://npm.pkg.github.com" >> .npmrc && echo "//npm.pkg.github.com/:_authToken=${{ secrets.CONSUMER_REPO_PAT }}" >> .npmrc
-
       - uses: oven-sh/setup-bun@v2
         with:
           bun-version: latest
@@ -231,9 +228,6 @@ jobs:
           repository: iits-kumo-ops/opentelekomcloud-onepager
           token: ${{ secrets.CONSUMER_REPO_PAT }}
 
-      - name: Configure npm registry
-        run: echo "@iits-kumo-ops:registry=https://npm.pkg.github.com" >> .npmrc && echo "//npm.pkg.github.com/:_authToken=${{ secrets.CONSUMER_REPO_PAT }}" >> .npmrc
-
       - uses: oven-sh/setup-bun@v2
         with:
           bun-version: latest
@@ -263,9 +257,6 @@ jobs:
         with:
           repository: iits-kumo-ops/onepagerkumoops
           token: ${{ secrets.CONSUMER_REPO_PAT }}
-
-      - name: Configure npm registry
-        run: echo "@iits-kumo-ops:registry=https://npm.pkg.github.com" >> .npmrc && echo "//npm.pkg.github.com/:_authToken=${{ secrets.CONSUMER_REPO_PAT }}" >> .npmrc
 
       - uses: oven-sh/setup-bun@v2
         with:
