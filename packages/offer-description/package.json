@@ -10,7 +10,7 @@
     "build": "bun run scripts/build.ts"
   },
   "exports": {
-    "./locales/*": "./dist/*"
+    "./locales/*": "./dist/locales/*"
   },
   "keywords": [
     "kumoops",

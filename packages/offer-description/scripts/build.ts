@@ -12,6 +12,6 @@ const ignoreWarnings = Bun.argv.includes("--ignore-warnings");
 buildLocalePackage({
   packageDir: PACKAGE_DIR,
   srcDir: path.join(PACKAGE_DIR, "src"),
-  distDir: path.join(PACKAGE_DIR, "dist"),
+  distDir: path.join(PACKAGE_DIR, "dist", "locales"),
   ignoreWarnings,
 });
