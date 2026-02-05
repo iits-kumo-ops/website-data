@@ -1,5 +1,5 @@
 /**
- * @kumo-ops/addons
+ * @iits-kumo-ops/data-addons
  *
  * KumoOps addons data and locale files
  */
