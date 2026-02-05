@@ -183,6 +183,10 @@
       "title": "Onepager",
       "description": "Snel overzicht van onze diensten op één pagina"
     },
+    "otcOnepager": {
+      "title": "OTC & Soevereine Cloud",
+      "description": "Leer meer over OpenTelekomCloud en EU-soevereine cloudopties"
+    },
     "pitchdeck": {
       "title": "Pitchdeck",
       "description": "Volledige presentatie met details en visuals"

@@ -183,6 +183,10 @@
       "title": "Onepager",
       "description": "Schneller Überblick über unsere Leistungen auf einer Seite"
     },
+    "otcOnepager": {
+      "title": "OTC & Sovereign Cloud",
+      "description": "Erfahre mehr über OpenTelekomCloud und EU-souveräne Cloud-Optionen"
+    },
     "pitchdeck": {
       "title": "Pitchdeck",
       "description": "Vollständige Präsentation mit Details und Visuals"
