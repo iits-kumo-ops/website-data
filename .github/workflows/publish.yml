@@ -186,3 +186,102 @@ jobs:
         working-directory: packages/onepager-opentelekomcloud
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  update-kumo-ops-website:
+    needs: [publish-addons, publish-offer-description]
+    if: always() && (needs.publish-addons.result == 'success' || needs.publish-offer-description.result == 'success')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout consumer repo
+        uses: actions/checkout@v4
+        with:
+          repository: iits-kumo-ops/kumo-ops-website
+          token: ${{ secrets.CONSUMER_REPO_PAT }}
+
+      - name: Configure npm registry
+        run: echo "@iits-kumo-ops:registry=https://npm.pkg.github.com" >> .npmrc && echo "//npm.pkg.github.com/:_authToken=${{ secrets.CONSUMER_REPO_PAT }}" >> .npmrc
+
+      - uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
+      - run: bun install
+
+      - name: Update data packages
+        run: bun update @iits-kumo-ops/data-addons @iits-kumo-ops/data-offer-description
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v7
+        with:
+          token: ${{ secrets.CONSUMER_REPO_PAT }}
+          commit-message: "chore: update @iits-kumo-ops/data-* packages"
+          title: "chore: update @iits-kumo-ops/data-* packages"
+          body: "Automated update of data packages from website-data."
+          branch: deps/update-data-packages
+          delete-branch: true
+
+  update-opentelekomcloud-onepager:
+    needs: [publish-onepager-opentelekomcloud]
+    if: needs.publish-onepager-opentelekomcloud.result == 'success'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout consumer repo
+        uses: actions/checkout@v4
+        with:
+          repository: iits-kumo-ops/opentelekomcloud-onepager
+          token: ${{ secrets.CONSUMER_REPO_PAT }}
+
+      - name: Configure npm registry
+        run: echo "@iits-kumo-ops:registry=https://npm.pkg.github.com" >> .npmrc && echo "//npm.pkg.github.com/:_authToken=${{ secrets.CONSUMER_REPO_PAT }}" >> .npmrc
+
+      - uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
+      - run: bun install
+
+      - name: Update data packages
+        run: bun update @iits-kumo-ops/data-onepager-opentelekomcloud
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v7
+        with:
+          token: ${{ secrets.CONSUMER_REPO_PAT }}
+          commit-message: "chore: update @iits-kumo-ops/data-onepager-opentelekomcloud"
+          title: "chore: update @iits-kumo-ops/data-onepager-opentelekomcloud"
+          body: "Automated update of data packages from website-data."
+          branch: deps/update-data-packages
+          delete-branch: true
+
+  update-onepagerkumoops:
+    needs: [publish-onepager]
+    if: needs.publish-onepager.result == 'success'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout consumer repo
+        uses: actions/checkout@v4
+        with:
+          repository: iits-kumo-ops/onepagerkumoops
+          token: ${{ secrets.CONSUMER_REPO_PAT }}
+
+      - name: Configure npm registry
+        run: echo "@iits-kumo-ops:registry=https://npm.pkg.github.com" >> .npmrc && echo "//npm.pkg.github.com/:_authToken=${{ secrets.CONSUMER_REPO_PAT }}" >> .npmrc
+
+      - uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
+      - run: bun install
+
+      - name: Update data packages
+        run: bun update @iits-kumo-ops/data-onepager
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v7
+        with:
+          token: ${{ secrets.CONSUMER_REPO_PAT }}
+          commit-message: "chore: update @iits-kumo-ops/data-onepager"
+          title: "chore: update @iits-kumo-ops/data-onepager"
+          body: "Automated update of data packages from website-data."
+          branch: deps/update-data-packages
+          delete-branch: true
