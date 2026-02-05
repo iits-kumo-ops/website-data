@@ -4,37 +4,78 @@
  * KumoOps addons data and locale files
  */
 
-export * from "./types.js";
+export type Locale = "en" | "de" | "fr" | "es" | "it" | "nl" | "da" | "sv";
 
-import type { AddonsData, Locale } from "./types.js";
-import { SUPPORTED_LOCALES } from "./types.js";
+export const SUPPORTED_LOCALES: Locale[] = [
+  "en",
+  "de",
+  "fr",
+  "es",
+  "it",
+  "nl",
+  "da",
+  "sv",
+];
 
-/**
- * Dynamically load locale data
- * @param locale - The locale to load
- * @returns Promise resolving to the locale data
- */
-export async function loadLocale(locale: Locale): Promise<AddonsData> {
-  if (!SUPPORTED_LOCALES.includes(locale)) {
-    throw new Error(
-      `Unsupported locale: ${locale}. Supported locales: ${SUPPORTED_LOCALES.join(", ")}`
-    );
-  }
-
-  // Dynamic import for the locale file
-  const data = await import(`../locales/${locale}.json`, {
-    with: { type: "json" },
-  });
-  return data.default as AddonsData;
+export interface Addon {
+  label: string;
+  pricing: string;
+  short_description: string;
+  detailed_description: string;
 }
 
-/**
- * Get the path to a locale file
- * @param locale - The locale
- * @returns The relative path to the locale JSON file
- */
-export function getLocalePath(locale: Locale): string {
-  return `@kumo-ops/addons/locales/${locale}.json`;
+export interface Category {
+  label: string;
+  items: Record<string, Addon>;
 }
 
-export { SUPPORTED_LOCALES };
+export interface AddonsData {
+  meta: {
+    version: string;
+    lastUpdated: string;
+    description: string;
+  };
+  categories: Record<string, Category>;
+}
+
+export type CategoryId =
+  | "recommended"
+  | "support_operations"
+  | "security"
+  | "artificial_intelligence"
+  | "cloud_specific";
+
+export type AddonId =
+  // Recommended
+  | "migration"
+  | "capacity_boost"
+  | "upgrade_support"
+  | "managed_databases"
+  | "git_hosting"
+  | "argocd_project_mgmt"
+  | "cloud_cost_optimization"
+  | "message_broker"
+  | "additional_stage"
+  // Support & Operations
+  | "flex_tm_support_weekend"
+  | "flex_tm_support"
+  | "premium_sla_global"
+  | "premium_sla_eu"
+  // Security
+  | "vpn_ipsec"
+  | "container_image_hardening"
+  | "proactive_patch_mgmt"
+  | "passive_patch_mgmt"
+  | "managed_container_registry"
+  | "waf_management"
+  | "multi_tenancy"
+  | "psa_compatibility"
+  | "psa_itil_support"
+  | "c5_testified"
+  // AI
+  | "managed_azure_openai"
+  | "homeport_ai"
+  // Cloud Specific
+  | "rbac_telekom"
+  | "managed_identities"
+  | "rbac_azure";
