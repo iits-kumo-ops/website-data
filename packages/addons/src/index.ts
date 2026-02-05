@@ -2,6 +2,7 @@
  * @iits-kumo-ops/data-addons
  *
  * KumoOps addons data and locale files
+ *
  */
 
 export type Locale = "en" | "de" | "fr" | "es" | "it" | "nl" | "da" | "sv";
