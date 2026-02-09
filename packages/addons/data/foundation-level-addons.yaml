@@ -1,0 +1,356 @@
+description: "KumoOps Foundation Plan - included managed services (catalog-style)"
+supportedLocales:
+  - en
+  - de
+
+categories:
+  foundation_included:
+    label:
+      en: "Included in Foundation"
+      de: "Im Foundation enthalten"
+    items:
+      # --- Commercial / service-scope inclusions (from pricing/features list) ---
+      included_capacity_limit:
+        label:
+          en: "Capacity: Up to 8 developers or applications"
+          de: "Kapazität: Bis zu 8 Entwickler oder Anwendungen"
+        pricing:
+          en: "Included"
+          de: "Inklusive"
+        short_description:
+          en: "Foundation plan coverage for up to 8 developers or up to 8 applications (non-microservices)."
+          de: "Foundation-Abdeckung für bis zu 8 Entwickler oder bis zu 8 Anwendungen (nicht Microservices)."
+        detailed_description:
+          en: "Covers up to 8 developers or up to 8 applications for non-microservices architectures. If you exceed this limit, an upgrade (e.g., Capacity Boost) is required."
+          de: "Deckt bis zu 8 Entwickler oder bis zu 8 Anwendungen bei nicht-microservices Architekturen ab. Bei Überschreitung ist ein Upgrade (z. B. Capacity Boost) erforderlich."
+
+      foundation_setup_maintenance:
+        label:
+          en: "Foundation Setup & Maintenance"
+          de: "Foundation Setup & Wartung"
+        pricing:
+          en: "Included"
+          de: "Inklusive"
+        short_description:
+          en: "Initial setup plus ongoing maintenance of the KumoOps platform stack."
+          de: "Initiales Setup plus laufende Wartung des KumoOps-Plattform-Stacks."
+        detailed_description:
+          en: "Establishes and maintains the cloud operations stack (internal developer platform) using Infrastructure as Code and GitOps, including validation of configuration assets and ongoing platform operations."
+          de: "Baut den Cloud-Operations-Stack (Internal Developer Platform) mittels Infrastructure as Code und GitOps auf und betreibt ihn, inkl. Validierung von Konfigurations-Assets und laufendem Plattformbetrieb."
+
+      monthly_support_budget:
+        label:
+          en: "Monthly Support Budget (10 hours)"
+          de: "Monatliches Support-Budget (10 Stunden)"
+        pricing:
+          en: "Included"
+          de: "Inklusive"
+        short_description:
+          en: "Includes 10 hours of support per month within the Foundation scope."
+          de: "Enthält 10 Stunden Support pro Monat im Foundation-Umfang."
+        detailed_description:
+          en: "Provides a monthly support time budget of 10 hours for requests and operational support within the KumoOps Foundation scope."
+          de: "Stellt ein monatliches Zeitbudget von 10 Stunden für Anfragen und operativen Support im Rahmen des KumoOps-Foundation-Scopes bereit."
+
+      iac_gitops_included:
+        label:
+          en: "Infrastructure as Code & GitOps"
+          de: "Infrastructure as Code & GitOps"
+        pricing:
+          en: "Included"
+          de: "Inklusive"
+        short_description:
+          en: "IaC and GitOps are part of the default operating model."
+          de: "IaC und GitOps sind Teil des Standard-Betriebsmodells."
+        detailed_description:
+          en: "Infrastructure and platform/application delivery are managed via Infrastructure as Code and GitOps workflows (e.g., Terraform/OpenTofu/Crossplane and ArgoCD/Flux)."
+          de: "Infrastruktur sowie Plattform-/Applikationsauslieferung werden über Infrastructure as Code und GitOps-Workflows betrieben (z. B. Terraform/OpenTofu/Crossplane und ArgoCD/Flux)."
+
+      sla_8x5:
+        label:
+          en: "SLA 8×5 Support"
+          de: "SLA 8×5 Support"
+        pricing:
+          en: "Included"
+          de: "Inklusive"
+        short_description:
+          en: "Support availability Mon–Fri, 09:00–17:00."
+          de: "Support-Verfügbarkeit Mo–Fr, 09:00–17:00."
+        detailed_description:
+          en: "Foundation includes an 8×5 SLA with support availability Monday to Friday, 09:00–17:00."
+          de: "Im Foundation ist ein 8×5 SLA enthalten mit Support-Verfügbarkeit Montag bis Freitag, 09:00–17:00."
+
+      included_two_stages:
+        label:
+          en: "Two Stages Included (dev + prod)"
+          de: "Zwei Stages enthalten (dev + prod)"
+        pricing:
+          en: "Included"
+          de: "Inklusive"
+        short_description:
+          en: "Two environments are included by default: development and production."
+          de: "Standardmäßig sind zwei Umgebungen enthalten: Development und Production."
+        detailed_description:
+          en: "Includes comprehensive setup and operations for two stages (dev and prod). Additional stages (e.g., staging/QA) can be added via the Additional Stage add-on."
+          de: "Enthält Setup und Betrieb für zwei Stages (dev und prod). Weitere Stages (z. B. staging/QA) können über das Add-on „Additional Stage“ ergänzt werden."
+
+      collaboration_integration:
+        label:
+          en: "Slack/Teams Integration"
+          de: "Slack/Teams-Integration"
+        pricing:
+          en: "Included"
+          de: "Inklusive"
+        short_description:
+          en: "Integration with Slack or Microsoft Teams for operational communication."
+          de: "Integration mit Slack oder Microsoft Teams für operative Kommunikation."
+        detailed_description:
+          en: "Enables integration with Slack and/or Microsoft Teams to streamline communication and operational workflows."
+          de: "Ermöglicht die Integration mit Slack und/oder Microsoft Teams zur Vereinfachung von Kommunikation und operativen Abläufen."
+
+      dedicated_email_phone_support:
+        label:
+          en: "Dedicated Email & Phone Support"
+          de: "Dedizierter E-Mail- & Telefon-Support"
+        pricing:
+          en: "Included"
+          de: "Inklusive"
+        short_description:
+          en: "Dedicated support channels via email and phone."
+          de: "Dedizierte Support-Kanäle per E-Mail und Telefon."
+        detailed_description:
+          en: "Provides dedicated email and phone support channels for handling requests and incidents within the agreed SLA."
+          de: "Stellt dedizierte Support-Kanäle per E-Mail und Telefon zur Bearbeitung von Anfragen und Incidents im Rahmen des vereinbarten SLA bereit."
+
+      # --- Technical inclusions (extracted from technical description) ---
+      kubernetes_cluster:
+        label:
+          en: "Kubernetes Cluster (per stage)"
+          de: "Kubernetes-Cluster (pro Stage)"
+        pricing:
+          en: "Included"
+          de: "Inklusive"
+        short_description:
+          en: "Provisioning and baseline configuration of one Kubernetes cluster per stage."
+          de: "Bereitstellung und Basiskonfiguration eines Kubernetes-Clusters pro Stage."
+        detailed_description:
+          en: "Includes configuration of a single Kubernetes cluster per stage, optional Multi-AZ setup, tailored nodepools, encryption for all nodes, best-practice CRDs, and StorageClass configuration with default encryption."
+          de: "Enthält die Konfiguration eines Kubernetes-Clusters pro Stage, optional Multi-AZ-Setup, angepasste Nodepools, Verschlüsselung aller Nodes, Best-Practice-CRDs sowie StorageClass-Konfiguration mit Standardverschlüsselung."
+
+      infrastructure_as_code:
+        label:
+          en: "Infrastructure as Code (IaC) Enablement"
+          de: "Infrastructure as Code (IaC) Enablement"
+        pricing:
+          en: "Included"
+          de: "Inklusive"
+        short_description:
+          en: "Infrastructure provisioning and lifecycle management via code."
+          de: "Provisionierung und Lifecycle-Management der Infrastruktur per Code."
+        detailed_description:
+          en: "Uses Terraform, OpenTofu, or Crossplane. If Terraform/OpenTofu is used, a remote state bucket with encryption is created and maintained."
+          de: "Nutzt Terraform, OpenTofu oder Crossplane. Bei Terraform/OpenTofu wird ein Remote-State-Bucket mit Verschlüsselung erstellt und betrieben."
+
+      permissions_management:
+        label:
+          en: "Permissions / IAM Baseline Setup"
+          de: "Berechtigungen / IAM-Basissetup"
+        pricing:
+          en: "Included"
+          de: "Inklusive"
+        short_description:
+          en: "Cloud-provider-specific roles and permissions following best practices."
+          de: "Cloud-Provider-spezifische Rollen und Berechtigungen nach Best Practices."
+        detailed_description:
+          en: "Sets up roles and permissions aligned with best practices for the selected cloud provider."
+          de: "Richtet Rollen und Berechtigungen gemäß Best Practices für den gewählten Cloud-Provider ein."
+
+      public_dns_management:
+        label:
+          en: "Public DNS Management"
+          de: "Public-DNS-Management"
+        pricing:
+          en: "Included"
+          de: "Inklusive"
+        short_description:
+          en: "Managed public DNS including configuration, maintenance, and monitoring."
+          de: "Managed Public DNS inkl. Konfiguration, Wartung und Monitoring."
+        detailed_description:
+          en: "Fully managed public DNS solution including configuration, routine maintenance, and proactive monitoring of DNS zones, optimized for fast resolution, high availability, and resistance against DNS-based attacks."
+          de: "Vollständig gemanagte Public-DNS-Lösung inkl. Konfiguration, regelmäßiger Wartung und proaktivem Monitoring der DNS-Zonen, optimiert für schnelle Auflösung, hohe Verfügbarkeit und Schutz gegen DNS-basierte Angriffe."
+
+      private_dns:
+        label:
+          en: "Private DNS Setup"
+          de: "Private-DNS-Setup"
+        pricing:
+          en: "Included"
+          de: "Inklusive"
+        short_description:
+          en: "Private DNS for internal service communication."
+          de: "Private DNS für interne Service-Kommunikation."
+        detailed_description:
+          en: "Configuration of a private DNS for internal communication within the environment."
+          de: "Konfiguration eines Private DNS für die interne Kommunikation innerhalb der Umgebung."
+
+      database_service_setup:
+        label:
+          en: "Database Service Setup (1 managed server)"
+          de: "Datenbank-Setup (1 Managed Server)"
+        pricing:
+          en: "Included"
+          de: "Inklusive"
+        short_description:
+          en: "Provisioning and configuration of one managed database server with DB/user/schema as code."
+          de: "Bereitstellung und Konfiguration eines Managed-DB-Servers inkl. DB/User/Schema als Code."
+        detailed_description:
+          en: "Includes installation and configuration of one managed database server (multiple databases possible), database initialization as code, user management as code, schema management as code, and support for Primary/Secondary mode if required."
+          de: "Enthält Installation und Konfiguration eines Managed-DB-Servers (mehrere Datenbanken möglich), Datenbank-Initialisierung als Code, User-Management als Code, Schema-Management als Code sowie Unterstützung für Primary/Secondary-Modus bei Bedarf."
+
+      load_balancer_configuration:
+        label:
+          en: "Load Balancer Configuration"
+          de: "Load-Balancer-Konfiguration"
+        pricing:
+          en: "Included"
+          de: "Inklusive"
+        short_description:
+          en: "Load balancer setup and integration with the Kubernetes cluster."
+          de: "Load-Balancer-Setup und Anbindung an den Kubernetes-Cluster."
+        detailed_description:
+          en: "Setup of a load balancer for traffic distribution with automatic connection to the Kubernetes cluster."
+          de: "Einrichtung eines Load Balancers zur Traffic-Verteilung mit automatischer Anbindung an den Kubernetes-Cluster."
+
+      certificate_management:
+        label:
+          en: "Certificate Management (cert-manager)"
+          de: "Zertifikatsmanagement (cert-manager)"
+        pricing:
+          en: "Included"
+          de: "Inklusive"
+        short_description:
+          en: "Automated SSL/TLS certificate provisioning and renewal."
+          de: "Automatisierte Bereitstellung und Erneuerung von SSL/TLS-Zertifikaten."
+        detailed_description:
+          en: "Implementation of cert-manager (e.g., Let's Encrypt), including one business domain certificate per stage, one admin domain certificate per stage, and wildcard certificate management for subdomains."
+          de: "Implementierung von cert-manager (z. B. Let's Encrypt) inkl. je einem Business-Domain-Zertifikat pro Stage, je einem Admin-Domain-Zertifikat pro Stage sowie Wildcard-Zertifikatsmanagement für Subdomains."
+
+      bastion_host:
+        label:
+          en: "Jump Server / Bastion Host"
+          de: "Jump Server / Bastion Host"
+        pricing:
+          en: "Included"
+          de: "Inklusive"
+        short_description:
+          en: "Controlled and secure administrative access to the cloud environment."
+          de: "Kontrollierter und sicherer administrativer Zugriff auf die Cloud-Umgebung."
+        detailed_description:
+          en: "Deployment and ongoing support of a jump server/bastion host as a gateway for administrative tasks, reducing the risk of unauthorized access."
+          de: "Bereitstellung und laufender Support eines Jump Servers/Bastion Hosts als Gateway für administrative Aufgaben zur Reduzierung unbefugter Zugriffe."
+
+      observability_stack:
+        label:
+          en: "Monitoring, Alerting & Logging"
+          de: "Monitoring, Alerting & Logging"
+        pricing:
+          en: "Included"
+          de: "Inklusive"
+        short_description:
+          en: "One monitoring/alerting/logging stack operated with best-practice configuration."
+          de: "Ein Monitoring-/Alerting-/Logging-Stack mit Best-Practice-Konfiguration."
+        detailed_description:
+          en: "Installation of one monitoring, alerting, and logging system (e.g., Elastic Stack or Loki Stack). If Elastic Stack is chosen, ILM policies and best-practice setup are included."
+          de: "Installation eines Monitoring-, Alerting- und Logging-Systems (z. B. Elastic Stack oder Loki Stack). Bei Elastic Stack sind ILM-Policies und Best-Practice-Setup enthalten."
+
+      identity_management_sso:
+        label:
+          en: "Identity Provider Integration & SSO (for platform tools)"
+          de: "Identity-Provider-Integration & SSO (für Plattform-Tools)"
+        pricing:
+          en: "Included"
+          de: "Inklusive"
+        short_description:
+          en: "Integrates one IdP and enables SSO/token-based access for platform tooling."
+          de: "Integriert einen IdP und ermöglicht SSO/tokenbasierten Zugriff für Plattform-Tools."
+        detailed_description:
+          en: "Setup and ongoing support for integrating a single identity provider (e.g., Entra ID/Azure AD). Includes technical SSO setup, token-based access control for tools (ArgoCD, monitoring, logging), and OIDC proxy setup for admin and business domains."
+          de: "Setup und laufender Support zur Integration eines Identity Providers (z. B. Entra ID/Azure AD). Enthält technisches SSO-Setup, tokenbasiertes Access Control für Tools (ArgoCD, Monitoring, Logging) sowie OIDC-Proxy-Setup für Admin- und Business-Domains."
+
+      admin_landing_page:
+        label:
+          en: "Administrator Landing Page"
+          de: "Admin-Landingpage"
+        pricing:
+          en: "Included"
+          de: "Inklusive"
+        short_description:
+          en: "Dedicated landing page for administrators."
+          de: "Dedizierte Landingpage für Administratoren."
+        detailed_description:
+          en: "Provides a dedicated landing page for administrators to access and manage resources and configurations."
+          de: "Stellt eine dedizierte Landingpage bereit, über die Administratoren Ressourcen und Konfigurationen erreichen und verwalten können."
+
+      external_uptime_monitoring:
+        label:
+          en: "External Uptime Monitoring Integration"
+          de: "Integration externes Uptime-Monitoring"
+        pricing:
+          en: "Included"
+          de: "Inklusive"
+        short_description:
+          en: "Integration of external uptime monitoring for business applications."
+          de: "Integration eines externen Uptime-Monitorings für Business-Applikationen."
+        detailed_description:
+          en: "Integrates an external uptime monitoring solution for business applications."
+          de: "Integriert eine externe Uptime-Monitoring-Lösung für Business-Applikationen."
+
+      secret_management_system:
+        label:
+          en: "Secret Management System"
+          de: "Secret-Management-System"
+        pricing:
+          en: "Included"
+          de: "Inklusive"
+        short_description:
+          en: "Managed secrets storage with guidance for secure app injection."
+          de: "Gemanagte Secrets-Ablage inkl. Leitfaden für sichere App-Integration."
+        detailed_description:
+          en: "Setup and maintenance of a secrets management system (e.g., HashiCorp Vault, Azure Key Vault, AWS Secrets Manager), secure storage of credentials/API keys, plus a blueprint and documentation for secret injection into applications."
+          de: "Setup und Betrieb eines Secret-Management-Systems (z. B. HashiCorp Vault, Azure Key Vault, AWS Secrets Manager), sichere Ablage von Credentials/API-Keys sowie Blueprint und Dokumentation zur Secret-Injection in Applikationen."
+
+      gitops_operations:
+        label:
+          en: "GitOps Operations (ArgoCD/Flux)"
+          de: "GitOps-Betrieb (ArgoCD/Flux)"
+        pricing:
+          en: "Included"
+          de: "Inklusive"
+        short_description:
+          en: "GitOps workflows for apps and platform services with bootstrap automation."
+          de: "GitOps-Workflows für Apps und Plattform-Services inkl. Bootstrap-Automation."
+        detailed_description:
+          en: "Installation and configuration of GitOps workflows using ArgoCD and/or Flux, bootstrap via Tofu, and auto-discovery of microservices and infrastructure services. ArgoCD RBAC with IdP integration is supported; RBAC must be requested by the client."
+          de: "Installation und Konfiguration von GitOps-Workflows mit ArgoCD und/oder Flux, Bootstrap via Tofu sowie Auto-Discovery von Microservices und Infrastruktur-Services. ArgoCD-RBAC mit IdP-Integration wird unterstützt; RBAC muss vom Kunden angefragt werden."
+
+      container_pull_secrets_automation:
+        label:
+          en: "Container Pull Secrets Automation (Kyverno)"
+          de: "Automatisierung von Container-Pull-Secrets (Kyverno)"
+        pricing:
+          en: "Included"
+          de: "Inklusive"
+        short_description:
+          en: "Automated population and injection of container pull secrets."
+          de: "Automatisches Befüllen und Injizieren von Container-Pull-Secrets."
+        detailed_description:
+          en: "Deploys Kyverno to auto-populate container pull secrets, including automatic injection of Git and Docker image pull secrets. This does not include the Container Security Best Practices add-on."
+          de: "Deployt Kyverno zum automatischen Befüllen von Container-Pull-Secrets inkl. automatischer Injection von Git- und Docker-Image-Pull-Secrets. Das Container-Security-Best-Practices-Add-on ist nicht enthalten."
+
+notes:
+  en:
+    - "Some included items are conditional (e.g., Primary/Secondary DB 'if required', Multi-AZ 'possible', ArgoCD RBAC 'on request')."
+    - "OpenTelekomCloud may require an additional infra stage for central components like Identity and Secret Management."
+  de:
+    - "Einige enthaltene Punkte sind bedingt (z. B. Primary/Secondary DB 'bei Bedarf', Multi-AZ 'möglich', ArgoCD RBAC 'auf Anfrage')."
+    - "Bei OpenTelekomCloud kann eine zusätzliche Infra-Stage für zentrale Komponenten wie Identity- und Secret-Management erforderlich sein."
