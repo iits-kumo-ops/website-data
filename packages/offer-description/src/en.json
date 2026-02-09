@@ -166,16 +166,19 @@
   "faq": {
     "title": "Frequently Asked Questions",
     "subtitle": "Find answers to common questions about KumoOps",
-    "q1": "A tool or technology I need isn't listed in the add-ons—do you support it?",
+
+    "q1": "When is KumoOps not a good fit?",
     "a1": "In most cases, yes. We support a wide range of tools and technologies. Our default setup is container-based (e.g., Docker/Kubernetes), so we generally don't support workloads that require full Windows Server environments.",
-    "q2": "What happens to the source code and ownership if I cancel my KumoOps subscription?",
+    "q2": "What happens to the source code and ownership if I cancel my subscription?",
     "a2": "You keep ownership. We build on open-source tooling and infrastructure-as-code, and during offboarding we provide you with a copy of the relevant code and configuration. After offboarding, your subscription ends—so ongoing support, updates, and improvements are no longer included.",
     "q3": "How can KumoOps be cheaper than a single hire?",
     "a3": "Because you're not paying for one generalist—you're getting a team. Our engineers specialize in dedicated areas and we roll out improvements across all customers. When we build a feature or harden a setup, every customer benefits, which drives the cost per customer down significantly.",
     "q4": "How is KumoOps different from managed services?",
     "a4": "KumoOps is a standardized product, not a highly customized cloud setup. This means lower costs, a broader feature set, and faster onboarding compared to traditional managed services—without sacrificing flexibility.",
     "q5": "How is KumoOps different from managed Kubernetes?",
-    "a5": "KumoOps offers much more than just Kubernetes. We take care of your entire cloud infrastructure, CI/CD pipelines, and all CloudSecOps aspects—so you get a complete solution, not just container orchestration."
+    "a5": "KumoOps offers much more than just Kubernetes. We take care of your entire cloud infrastructure, CI/CD pipelines, and all CloudSecOps aspects—so you get a complete solution, not just container orchestration.",
+    "q6": "A tool or technology I need isn't listed in the add-ons—do you support it?",
+    "a6": "Yes no problem at all we just create a custom addon for you"
   },
   "furtherInfo": {
     "title": "Further Information",
