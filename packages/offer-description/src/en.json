@@ -168,7 +168,7 @@
     "subtitle": "Find answers to common questions about KumoOps",
 
     "q1": "When is KumoOps not a good fit?",
-    "a1": "In most cases, yes. We support a wide range of tools and technologies. Our default setup is container-based (e.g., Docker/Kubernetes), so we generally don't support workloads that require full Windows Server environments.",
+    "a1": "KumoOps isn’t a good fit if your workloads require full Windows Server–centric environments or aren’t suited to a container/Kubernetes operating model.",
     "q2": "What happens to the source code and ownership if I cancel my subscription?",
     "a2": "You keep ownership. We build on open-source tooling and infrastructure-as-code, and during offboarding we provide you with a copy of the relevant code and configuration. After offboarding, your subscription ends—so ongoing support, updates, and improvements are no longer included.",
     "q3": "How can KumoOps be cheaper than a single hire?",
