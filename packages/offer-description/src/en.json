@@ -180,6 +180,9 @@
     "q6": "A tool or technology I need isn't listed in the add-ons—do you support it?",
     "a6": "Yes no problem at all we just create a custom addon for you"
   },
+  "chatWidget": {
+    "welcomeMessage": "Hello! I'm the KumoOps support assistant. How can I help you configure your CloudSecOps solution?"
+  },
   "furtherInfo": {
     "title": "Further Information",
     "subtitle": "Download our materials to learn more about KumoOps",

@@ -176,6 +176,9 @@
     "q5": "Wie unterscheidet sich KumoOps von Managed Kubernetes?",
     "a5": "KumoOps bietet weit mehr als nur Kubernetes. Wir kümmern uns um deine gesamte Cloud-Infrastruktur, CI/CD-Pipelines und alle CloudSecOps-Aspekte – so bekommst du eine Komplettlösung, nicht nur Container-Orchestrierung."
   },
+  "chatWidget": {
+    "welcomeMessage": "Hallo! Ich bin der KumoOps Support-Assistent. Wie kann ich Ihnen bei der Konfiguration Ihrer CloudSecOps-Lösung helfen?"
+  },
   "furtherInfo": {
     "title": "Weitere Informationen",
     "subtitle": "Lade unsere Materialien herunter, um mehr über KumoOps zu erfahren",
